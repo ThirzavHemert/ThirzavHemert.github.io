@@ -1,21 +1,9 @@
-/* ul {
-    list-style-type: none;
-    color: white;
-    margin: 0;
-    padding: 0;
-}
-
-li {
-    display: inline;
-
-} */
-
 ul {
     display: flex;
     align-items: stretch; /* Default */
     justify-content: space-between;
     width: 100%;
-    background: #cacaca;
+    background: #1e1e20;
     margin: 0;
     padding: 0;
     border-radius: 15px; /* Rounded edges for the navbar */
@@ -27,45 +15,29 @@ li {
     display: block;
     flex: 1 ; /* Default */
     list-style-type: none;
-    background: #fafafa;
     font-size: 20px;
-    padding: 5px;
+    padding: 10px;
     text-align: center;
     transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions for hover and click */
     cursor: pointer;
 }
 
 li:hover {
-    background-color: #e0e0e0; /* Highlight on hover */
+    background-color: #3d3d43; /* Highlight on hover */
 }
 
-li:active {
-    background-color: #d4d4d4; /* Subtle change on click */
-    transform: scale(0.98); /* Slight scale down for a "press" effect */
+.link-active {
+    background-color: #18181b;
+    color: #0bd109;
 }
 
-/* Click Animation Using Pseudo-elements */
-li.clicked::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #b3b3b3; /* Change to any desired animation color */
-    opacity: 0;
-    animation: clickEffect 0.4s ease forwards;
+li.link-active > a {
+    color: #0bd109; /* Explicitly target the active link's text */
 }
 
-@keyframes clickEffect {
-    0% {
-        opacity: 0.5;
-        transform: scale(0);
-    }
-    100% {
-        opacity: 0;
-        transform: scale(1);
-    }
+a {
+    text-decoration: none;
+    color: white
 }
 
 header {

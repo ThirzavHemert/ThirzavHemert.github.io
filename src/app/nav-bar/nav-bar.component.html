@@ -2,17 +2,21 @@
 	<nav>
 		<div class="container">
 			<ul>
-				<li>
-					Home
+				<!-- <li
+            class="nav-item"
+            [routerLinkActive]="['link-active']"
+            [routerLinkActiveOptions]="{ exact: true }"
+          >
+            <a class="nav-link text-dark" [routerLink]="['/']">Home</a>
+          </li> -->
+				<li class="nav-item" [routerLink]="'/'" [routerLinkActive]="['link-active']" [routerLinkActiveOptions]="{ exact: true }">
+					<a class="nav-link" >Home</a>
 				</li>
-				<li>
-					Skills
+				<li class="nav-item" [routerLink]="['/aboutMe']" [routerLinkActive]="['link-active']" [routerLinkActiveOptions]="{ exact: true }">
+					<a class="nav-link" >About me</a>
 				</li>
-				<li>
-					Projects
-				</li>
-				<li>
-					About me
+				<li class="nav-item" [routerLink]="['/resume']" [routerLinkActive]="['link-active']" [routerLinkActiveOptions]="{ exact: true }">
+					<a class="nav-link" >Resume</a>
 				</li>
 			</ul>
 		</div>

@@ -1,4 +1,5 @@
 import { AfterViewInit, Component, ElementRef, Renderer2 } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-nav-bar',
@@ -6,7 +7,20 @@ import { AfterViewInit, Component, ElementRef, Renderer2 } from '@angular/core';
   styleUrls: ['./nav-bar.component.css']
 })
 export class NavBarComponent implements AfterViewInit {
-  constructor(private renderer: Renderer2, private elRef: ElementRef) {}
+  toolingPage: string = 'tooling-page';
+
+  constructor(private renderer: Renderer2, private elRef: ElementRef, private route: ActivatedRoute) {}
+
+  ngOnInit() {
+		this.route.fragment.subscribe((fragment) => {
+			if (fragment) {
+				const element = document.getElementById(fragment);
+				if (element) {
+					element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+				}
+			}
+		});
+	}
 
   ngAfterViewInit(): void {
     const listItems = this.elRef.nativeElement.querySelectorAll('ul li');
