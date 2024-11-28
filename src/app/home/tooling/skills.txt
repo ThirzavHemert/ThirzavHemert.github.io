@@ -1,0 +1,13 @@
+Javascript
+Typescript
+Java
+Kotlin
+C#
+Python
+
+Angular
+React
+SQL
+MongoDb
+Android Studio
+Webscraping
