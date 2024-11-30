@@ -46,23 +46,35 @@
     }
 
     .languages {
-        
-        width: 60%;
+        width: 75%;
         display: flex;
         align-items: stretch;
         justify-content: space-between;
         margin: auto;
         margin-top: 3%;
-        padding: 0;
+        padding: 10px;
+        font-size: 25px;
+        background: #175218;
+        border-radius: 15px;
+        border: green solid 1px;
+        opacity: 0.8;
     }
 
     .lang-item {
-        width: 8%;
-        background:white;
-        padding: 10px;
+        background: #175218;
+        color: white;
+        padding: 15px;
+        padding-top: 22px;
         border-radius: 15px;
         border: green solid 1px;
-        display: block;
+        display: flex;
         text-align: center;
+        background: #00152b;
+    }
+
+    .icon {
+        flex-grow: 1;
+        margin-right: 10px;
+        fill: #4691f6;
     }
 }
