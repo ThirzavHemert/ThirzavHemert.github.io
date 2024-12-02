@@ -45,6 +45,16 @@
         box-shadow: 0 0 5px 5px #09D009;
     }
 
+    .title {
+        text-align: center;
+        margin: auto;
+        margin-top: 3%;
+        font-size: 30px;
+        font-weight: bold;
+        color: white;
+        opacity: 0.7;
+    }
+
     .languages {
         width: 75%;
         margin: auto;
@@ -58,7 +68,7 @@
         justify-content: space-between;
         align-items: center;     
         padding: 0px 20px 0px 20px;
-        margin-top: 3%;
+        margin-top: 1%;
     }
     
     .lang-item {
@@ -108,12 +118,37 @@
     }
     
     .lang-item .flip-card .back {
-        background: #175218;
+        background: #00152b;
+        opacity: 0.9;
         color: white;
         transform: rotateY(180deg);
+    }
+
+    .tooling {
+        width: 75%;
+        margin: auto;
+        background: #175218;
+        border-radius: 15px;
+        border: green solid 1px;
+        opacity: 0.8;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: space-between;
+        align-items: center;     
+        padding: 0px 20px 0px 20px;
+        margin-top: 1%;
+    }
+
+    .icon {
+        flex-grow: 1;
+        margin-right: 10px;
+        fill: #4691f6;
     }
 
     .lang-item:hover .flip-card {
         transform: rotateY(180deg);
     }
+
+    
 }
