@@ -2,16 +2,7 @@
     position: relative;
     overflow: hidden;
     background-image: linear-gradient(#001021, #011b38);
-
-    .background-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    /* object-fit: cover; */
-    z-index: -1;
-    }
+    padding-bottom: 3%;
 
     .content {
         position: relative;
