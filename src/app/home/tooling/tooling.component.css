@@ -1,6 +1,7 @@
 .tooling-page {
     position: relative;
     overflow: hidden;
+    background-image: linear-gradient(#001021, #011b38);
 
     .background-image {
     position: absolute;

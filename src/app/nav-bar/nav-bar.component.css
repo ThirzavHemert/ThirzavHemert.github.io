@@ -3,10 +3,10 @@ ul {
     align-items: stretch; /* Default */
     justify-content: space-between;
     width: 100%;
+    height: 100%;
     background: #1e1e20;
     margin: 0;
     padding: 0;
-    border-radius: 15px; /* Rounded edges for the navbar */
     overflow: hidden; /* Prevent content from spilling over the rounded edges */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
@@ -17,6 +17,7 @@ li {
     list-style-type: none;
     font-size: 20px;
     padding: 10px;
+    height: 100%;
     text-align: center;
     transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions for hover and click */
     cursor: pointer;
@@ -40,11 +41,14 @@ a {
     color: white
 }
 
-header {
-    width: 30%;
-    margin: auto;
+.header {
+    width: 100%;
+    box-sizing: border-box;
+    background: #1e1e20;
 }
 
 .container {
-    position: relative; /* Enables pseudo-elements like `::before` on children */
+    width: 40%;
+    margin: auto;
+    height: 100%;
 }
