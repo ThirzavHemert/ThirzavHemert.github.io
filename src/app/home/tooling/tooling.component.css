@@ -2,7 +2,9 @@
     position: relative;
     overflow: hidden;
     background-image: linear-gradient(#001021, #011b38);
+    /* background-image: linear-gradient(#005939, #005939); */
     padding-bottom: 3%;
+    
 
     .content {
         position: relative;
@@ -19,22 +21,6 @@
         margin: auto;
         top: 5%;
         height: 500px;
-    }
-
-    .header {
-        text-align: center;
-        margin: auto;
-        margin-top: 3%;
-        font-size: 45px;
-        font-weight: bold;
-        -webkit-text-stroke: 2px black;
-        color: #09D009;
-        width: 10%;
-        border-radius: 15px;
-        border: green solid 1px;
-        padding: 10px;
-        background: #00152b;
-        box-shadow: 0 0 5px 5px #09D009;
     }
 
     .title {

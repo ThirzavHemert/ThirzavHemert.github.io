@@ -9,6 +9,7 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { ToolingComponent } from './home/tooling/tooling.component';
 import { AboutMeComponent } from './about-me/about-me.component';
 import { ExtraOptions, RouterModule, Routes } from '@angular/router';
+import { TimeLineComponent } from './home/time-line/time-line.component';
 
 const routerOptions: ExtraOptions = {
   anchorScrolling: 'enabled', // Enable scrolling to fragments
@@ -28,7 +29,8 @@ const routes: Routes = [
     LandingPageComponent,
     NavBarComponent,
     ToolingComponent,
-    AboutMeComponent
+    AboutMeComponent,
+    TimeLineComponent
   ],
   imports: [
     BrowserModule,
