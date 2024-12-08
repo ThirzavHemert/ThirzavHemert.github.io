@@ -43,19 +43,33 @@
   }
 
   .timeline {
-    position: relative;
     width: 100%;
     height: auto;
     margin: auto;
     padding: 20px 0;
     background: #01234a;
-  }
+}
 
-  .tl_background{
-    margin: auto;
-    width: 80%;
-    display: block;
-    padding: 0;
-  }
+.tl_background {
+  width: 80%;
+  margin: auto;
+  display: block;
+}
+
+.tl_wrapper {
+    position: relative; /* Establish a containing block for absolute positioning */
+    overflow: hidden;
+}
+
+.con {
+    position: absolute; /* Place it over the image */
+    top: 50%; /* Center vertically within .tl_wrapper */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Offset for perfect centering */
+    color: white; /* Ensure visibility over the image */
+    z-index: 1; /* Ensure it overlays the image */
+    font-size: 1.2em;
+    text-align: center;
+}
 
 }
