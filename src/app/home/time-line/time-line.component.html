@@ -7,10 +7,57 @@
         <path class="" style="fill: #01234a;" d="M-40,95.627C20.307,95.627,20.058,56,80,56s60.003,40,120,40s59.948-40,120-40s60.313,40,120,40s60.258-40,120-40s60.202,40,120,40s60.147-40,120-40s60.513,40,120,40s60.036-40,120-40c59.964,0,60.402,40,120,40s59.925-40,120-40s60.291,40,120,40s60.235-40,120-40s60.18,40,120,40s59.82,0,59.82,0l0.18,138H-60V96L-40,95.627z"></path></svg>
     </div>
   </div>
+
   <div class="timeline">
     <div class="sub-header">Timeline</div>
-    
+
     <div class="tl_wrapper">
+      <img src="assets/img/timeline/line_start.svg" alt="" class="tl_background" />
+      <div class="con">
+        {{ getYears()[0]}}
+      </div>
+    </div>
+
+ 
+
+  <div *ngFor="let year of getYears(); let yearIndex = index">
+    <!-- Main timeline year marker -->
+    <ng-container *ngIf="yearIndex !== 0">
+      <div class="tl_wrapper">
+        <img src="assets/img/timeline/{{ yearIndex % 2 === 0 ? 'line_year_left.svg' : 'line_year_right.svg' }}" 
+            alt="" class="tl_background" />
+        <div class="con">{{ year }}</div>
+      </div>
+    </ng-container>
+  
+    <!-- Subline (projects per year) -->
+    <div *ngFor="let project of groupedProjects[year]; let i = index">
+      <div class="tl_wrapper">
+        <img 
+          [src]="'assets/img/timeline/' + 
+            (i === 0 ? (yearIndex % 2 === 0 ? 'main-left_sub-right_start.svg' : 'main-right_sub-left_start.svg') :
+             i % 2 === 0 ? (yearIndex % 2 === 0 ? 'main-left_sub-right.svg' : 'main-right_sub-left.svg') :
+                          (yearIndex % 2 === 0 ? 'main-left_sub-left.svg' : 'main-right_sub-right.svg'))" 
+          alt="" 
+          class="tl_background"
+        />
+        <div class="con">
+          {{ project !== 'Placeholder' ? project : '...' }}
+        </div>
+      </div>
+    </div>
+
+    <div class="tl_wrapper">
+      <img 
+        [src]="'assets/img/timeline/' + (yearIndex % 2 === 0 ? 'main-left_sub-left_end.svg' : 'main-right_sub-right_end.svg')" 
+        alt="" 
+        class="tl_background"
+      />
+      <div class="con"></div> <!-- Empty div for alignment -->
+    </div>
+  </div>
+    
+    <!-- <div class="tl_wrapper">
       <img src="assets/img/timeline/line_start.svg" alt="" class="tl_background" />
       <div class="con">
         2021
@@ -41,12 +88,40 @@
         
       </div>
     </div>
+
     <div class="tl_wrapper">
       <img src="assets/img/timeline/line_year_right.svg" alt="" class="tl_background" />
       <div class="con">
-        Helllooooo 66666
+        2022
       </div>
     </div>
+    <div class="tl_wrapper">
+      <img src="assets/img/timeline/main-right_sub-left_start.svg" alt="" class="tl_background" />
+      <div class="con">
+        Helllooooo 11111
+      </div>
+    </div>
+    <div class="tl_wrapper">
+      <img src="assets/img/timeline/main-right_sub-right.svg" alt="" class="tl_background" />
+      <div class="con">
+        Helllooooo 22222
+      </div>
+    </div>
+    <div class="tl_wrapper">
+      <img src="assets/img/timeline/main-right_sub-left.svg" alt="" class="tl_background" />
+      <div class="con">
+        Helllooooo 3333
+      </div>
+    </div>
+    <div class="tl_wrapper">
+      <img src="assets/img/timeline/main-right_sub-right_end.svg" alt="" class="tl_background" />
+      <div class="con">
+        
+      </div>
+    </div> -->
+
+    
+
     <!-- <img src="assets/img/timeline/main-left_sub-right_start.svg" alt="" class="tl_background" />
     <img src="assets/img/timeline/main-left_sub-left.svg" alt="" class="tl_background" /> -->
   </div>
