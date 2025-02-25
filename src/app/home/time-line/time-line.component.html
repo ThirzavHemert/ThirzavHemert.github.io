@@ -13,7 +13,7 @@
 
     <div class="tl_wrapper">
       <img src="assets/img/timeline/line_start.svg" alt="" class="tl_background" />
-      <div class="con">
+      <div class="year0">
         {{ getYears()[0]}}
       </div>
     </div>
@@ -26,7 +26,13 @@
       <div class="tl_wrapper">
         <img src="assets/img/timeline/{{ yearIndex % 2 === 0 ? 'line_year_left.svg' : 'line_year_right.svg' }}" 
             alt="" class="tl_background" />
-        <div class="con">{{ year }}</div>
+        <ng-container *ngIf="yearIndex % 2 === 0">
+          <div class="year2">{{ year }}</div>
+        </ng-container>
+        <ng-container *ngIf="yearIndex % 2 !== 0">
+          <div class="year1">{{ year }}</div>
+        </ng-container>
+        
       </div>
     </ng-container>
   
@@ -36,14 +42,16 @@
         <img 
           [src]="'assets/img/timeline/' + 
             (i === 0 ? (yearIndex % 2 === 0 ? 'main-left_sub-right_start.svg' : 'main-right_sub-left_start.svg') :
-             i % 2 === 0 ? (yearIndex % 2 === 0 ? 'main-left_sub-right.svg' : 'main-right_sub-left.svg') :
-                          (yearIndex % 2 === 0 ? 'main-left_sub-left.svg' : 'main-right_sub-right.svg'))" 
+            i % 2 === 0 ? (yearIndex % 2 === 0 ? 'main-left_sub-right.svg' : 'main-right_sub-left.svg') :
+            (yearIndex % 2 === 0 ? 'main-left_sub-left.svg' : 'main-right_sub-right.svg'))" 
           alt="" 
           class="tl_background"
         />
-        <div class="con">
+
+        <div [ngClass]="{ 'con0': i === 0, 'con': i !== 0 }">
           {{ project !== 'Placeholder' ? project : '...' }}
         </div>
+        
       </div>
     </div>
 
@@ -53,7 +61,7 @@
         alt="" 
         class="tl_background"
       />
-      <div class="con"></div> <!-- Empty div for alignment -->
+      <div class=""></div> <!-- Empty div for alignment -->
     </div>
   </div>
     

@@ -19,6 +19,10 @@ export class TimeLineComponent implements OnInit {
     { title: 'Project E', year: 2022 },
     { title: 'Project F', year: 2022 },
     { title: 'Project G', year: 2022 },
+    { title: 'Project H', year: 2023 },
+    { title: 'Project I', year: 2023 },
+    { title: 'Project J', year: 2023 },
+    { title: 'Project K', year: 2023 },
   ];
 
   groupedProjects: { [key: number]: string[] } = {};
