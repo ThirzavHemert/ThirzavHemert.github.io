@@ -24,7 +24,7 @@
     <!-- Main timeline year marker -->
     <ng-container *ngIf="yearIndex !== 0">
       <div class="tl_wrapper">
-        <img src="assets/img/timeline/{{ yearIndex % 2 === 0 ? 'line_year_left.svg' : 'line_year_right.svg' }}" 
+        <img src="assets/img/timeline/{{ yearIndex % 2 === 0 ? 'line_year_right.svg' : 'line_year_left.svg' }}" 
             alt="" class="tl_background" />
         <ng-container *ngIf="yearIndex % 2 === 0">
           <div class="year2">{{ year }}</div>
