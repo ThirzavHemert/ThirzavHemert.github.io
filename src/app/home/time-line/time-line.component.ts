@@ -11,6 +11,8 @@ interface Project {
   styleUrls: ['./time-line.component.css']
 })
 export class TimeLineComponent implements OnInit {
+  isExpanded = false;
+
   projects: Project[] = [
     { title: 'Project A', year: 2021 },
     { title: 'Project B', year: 2021 },
@@ -35,6 +37,9 @@ export class TimeLineComponent implements OnInit {
     return Object.keys(this.groupedProjects).map(year => +year); // Convert to numbers
   }
   
+  toggleTimeline(): void {
+    this.isExpanded = !this.isExpanded;
+  }
 
   groupProjectsByYear() {
     const projectMap: { [year: number]: string[] } = {};

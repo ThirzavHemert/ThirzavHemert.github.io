@@ -8,66 +8,73 @@
     </div>
   </div>
 
-  <div class="timeline">
-    <div class="sub-header">Timeline</div>
-    
-    <!-- <div class="tl_wrapper">
-      <img src="assets/img/timeline/line_start.svg" alt="" class="tl_background" />
-      <div class="year0">
-        2021
-      </div>
-    </div> -->
-
-    <div class="tl_wrapper">
-      <img src="assets/img/timeline/line_start.svg" alt="" class="tl_background" />
-      <div class="year0">
-        {{ getYears()[0]}}
-      </div>
-    </div>
-
-    <div *ngFor="let year of getYears(); let yearIndex = index">
-      <!-- Main timeline year marker -->
-      <ng-container *ngIf="yearIndex !== 0">
-        <div class="tl_wrapper">
-          <img src="assets/img/timeline/{{ yearIndex % 2 === 0 ? 'line_year_right.svg' : 'line_year_left.svg' }}" 
-              alt="" class="tl_background" />
-          <ng-container *ngIf="yearIndex % 2 === 0">
-            <div class="year2">{{ year }}</div>
-          </ng-container>
-          <ng-container *ngIf="yearIndex % 2 !== 0">
-            <div class="year1">{{ year }}</div>
-          </ng-container>
-          
+  <div class="timeline-container" [class.expanded]="isExpanded">
+    <div class="timeline">
+      <div class="sub-header">Timeline</div>
+      
+      <!-- <div class="tl_wrapper">
+        <img src="assets/img/timeline/line_start.svg" alt="" class="tl_background" />
+        <div class="year0">
+          2021
         </div>
-      </ng-container>
-    
-      <!-- Subline (projects per year) -->
-      <div *ngFor="let project of groupedProjects[year]; let i = index">
+      </div> -->
+
+      <div class="tl_wrapper">
+        <img src="assets/img/timeline/line_start.svg" alt="" class="tl_background" />
+        <div class="year0">
+          {{ getYears()[0]}}
+        </div>
+      </div>
+
+      <div *ngFor="let year of getYears(); let yearIndex = index">
+        <!-- Main timeline year marker -->
+        <ng-container *ngIf="yearIndex !== 0">
+          <div class="tl_wrapper">
+            <img src="assets/img/timeline/{{ yearIndex % 2 === 0 ? 'line_year_right.svg' : 'line_year_left.svg' }}" 
+                alt="" class="tl_background" />
+            <ng-container *ngIf="yearIndex % 2 === 0">
+              <div class="year2">{{ year }}</div>
+            </ng-container>
+            <ng-container *ngIf="yearIndex % 2 !== 0">
+              <div class="year1">{{ year }}</div>
+            </ng-container>
+            
+          </div>
+        </ng-container>
+      
+        <!-- Subline (projects per year) -->
+        <div *ngFor="let project of groupedProjects[year]; let i = index">
+          <div class="tl_wrapper">
+            <img 
+              [src]="'assets/img/timeline/' + 
+                (i === 0 ? (yearIndex % 2 === 0 ? 'main-left_sub-right_start.svg' : 'main-right_sub-left_start.svg') :
+                i % 2 === 0 ? (yearIndex % 2 === 0 ? 'main-left_sub-right.svg' : 'main-right_sub-left.svg') :
+                (yearIndex % 2 === 0 ? 'main-left_sub-left.svg' : 'main-right_sub-right.svg'))" 
+              alt="" 
+              class="tl_background"
+            />
+
+            <div [ngClass]="{ 'con0': i === 0, 'con': i !== 0 }">
+              {{ project !== 'Placeholder' ? project : '...' }}
+            </div>
+            
+          </div>
+        </div>
+
         <div class="tl_wrapper">
           <img 
-            [src]="'assets/img/timeline/' + 
-              (i === 0 ? (yearIndex % 2 === 0 ? 'main-left_sub-right_start.svg' : 'main-right_sub-left_start.svg') :
-              i % 2 === 0 ? (yearIndex % 2 === 0 ? 'main-left_sub-right.svg' : 'main-right_sub-left.svg') :
-              (yearIndex % 2 === 0 ? 'main-left_sub-left.svg' : 'main-right_sub-right.svg'))" 
+            [src]="'assets/img/timeline/' + (yearIndex % 2 === 0 ? 'main-left_sub-left_end.svg' : 'main-right_sub-right_end.svg')" 
             alt="" 
             class="tl_background"
           />
-
-          <div [ngClass]="{ 'con0': i === 0, 'con': i !== 0 }">
-            {{ project !== 'Placeholder' ? project : '...' }}
-          </div>
-          
+          <div class=""></div> <!-- Empty div for alignment -->
         </div>
       </div>
-
-      <div class="tl_wrapper">
-        <img 
-          [src]="'assets/img/timeline/' + (yearIndex % 2 === 0 ? 'main-left_sub-left_end.svg' : 'main-right_sub-right_end.svg')" 
-          alt="" 
-          class="tl_background"
-        />
-        <div class=""></div> <!-- Empty div for alignment -->
-      </div>
     </div>
+    
   </div>
+  <button class="expand-btn" (click)="toggleTimeline()">
+    {{ isExpanded ? 'Collapse' : 'Expand' }}
+  </button>
 </div>
+
