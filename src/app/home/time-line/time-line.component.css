@@ -1,22 +1,20 @@
 .timeline-container{
   position: relative;
   max-height: 1500px;
-  overflow: hidden;
   transition: max-height 0.5s ease-in-out;
 
   /* New background gradient */
-  background: linear-gradient(to bottom, rgba(1, 27, 56, 1) 90%, rgba(1, 27, 56, 0));
+  /* background: linear-gradient(to bottom, rgba(1, 27, 56, 1) 90%, rgba(1, 27, 56, 0)); */
 
   /* Mask for smooth fade */
-  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 85%, rgba(0, 0, 0, 0));
-  -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 85%, rgba(0, 0, 0, 0));
+  /* mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 85%, rgba(0, 0, 0, 0));
+  -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 85%, rgba(0, 0, 0, 0)); */
 
 
   &.expanded {
     max-height: 100%;
     mask-image: none;
     -webkit-mask-image: none;
-    background: none; /* Remove the gradient when expanded */
   }
 }
 
@@ -37,9 +35,16 @@
   background: rgba(0, 0, 0, 0.9);
 }
 
+.btn-div {
+  background: #01234a;
+}
+
 .timeline-page {
   position: relative;
-  overflow: hidden;
+  background: #01234a;
+  /* overflow: hidden; */
+  /* padding-bottom: 100px; */
+  /* margin-bottom: 100px; */
 
   .dark-blue {
     background: #011b38;
@@ -81,16 +86,47 @@
       box-shadow: 0 0 5px 5px #09D009;
   }
 
-  .timeline {
-    width: 100%;
-    height: auto;
-    margin: auto;
-    padding: 20px 0;
-    background: #01234a;
-}
+  .sticky-section {
+    display: flex;
+    width: 100vw;
+    justify-content: space-between;
+    padding: 40px;
+
+  }
+
+  .side-nav {
+    height: 5rem;
+    width: 10rem;
+    background: green;
+    flex-grow: 1;
+    flex-basis: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 2rem;
+  }
+
+  .right-side {
+    height: 5rem;
+    width: 10rem;
+    flex-grow: 1;
+    flex-basis: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 2rem;
+  }
+
+  .timeline-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
   .tl_background {
-    width: 65%;
+    width: 80%;
     margin: auto;
     display: block;
   }
@@ -98,6 +134,11 @@
   .tl_wrapper {
       position: relative;
       transform: translate3d(0, 0, 0);
+      width: 100%;
+  }
+
+  .timeline {
+    background: #01234a;
   }
 
   .year0 {
