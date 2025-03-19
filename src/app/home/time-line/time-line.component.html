@@ -13,18 +13,17 @@
 
       <div class="sticky-section">
         <aside class="side-nav">
-          <!-- <div class="side-nav-content"> -->
-            <p>2020</p>
-            <p>2021</p>
-            <p>2022</p>
-            <p>2023</p>
-          <!-- </div> -->
+          <div class="side-nav-content">
+            <a *ngFor="let year of getYears()" [href]="'#year-' + year" class="side-nav-link">
+              {{ year }}
+            </a>
+          </div>
         </aside>
         
         <section class="timeline-content">
           <div class="tl_wrapper">
             <img src="assets/img/timeline/line_start.svg" alt="" class="tl_background" />
-            <div class="year0">
+            <div class="year0" [attr.id]="'year-' + getYears()[0]">
               {{ getYears()[0]}}
             </div>
           </div>
@@ -36,10 +35,10 @@
                 <img src="assets/img/timeline/{{ yearIndex % 2 === 0 ? 'line_year_right.svg' : 'line_year_left.svg' }}" 
                     alt="" class="tl_background" />
                 <ng-container *ngIf="yearIndex % 2 === 0">
-                  <div class="year2">{{ year }}</div>
+                  <div class="year2" [attr.id]="'year-' + getYears()[0]">{{ year }}</div>
                 </ng-container>
                 <ng-container *ngIf="yearIndex % 2 !== 0">
-                  <div class="year1">{{ year }}</div>
+                  <div class="year1" [attr.id]="'year-' + getYears()[0]">{{ year }}</div>
                 </ng-container>
                 
               </div>
