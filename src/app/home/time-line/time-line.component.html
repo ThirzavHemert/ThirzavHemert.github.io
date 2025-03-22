@@ -35,10 +35,10 @@
                 <img src="assets/img/timeline/{{ yearIndex % 2 === 0 ? 'line_year_right.svg' : 'line_year_left.svg' }}" 
                     alt="" class="tl_background" />
                 <ng-container *ngIf="yearIndex % 2 === 0">
-                  <div class="year2" [attr.id]="'year-' + getYears()[0]">{{ year }}</div>
+                  <div class="year2" [attr.id]="'year-' + year">{{ year }}</div>
                 </ng-container>
                 <ng-container *ngIf="yearIndex % 2 !== 0">
-                  <div class="year1" [attr.id]="'year-' + getYears()[0]">{{ year }}</div>
+                  <div class="year1" [attr.id]="'year-' + year">{{ year }}</div>
                 </ng-container>
                 
               </div>
