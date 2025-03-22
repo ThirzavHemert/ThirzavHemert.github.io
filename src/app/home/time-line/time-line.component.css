@@ -88,15 +88,14 @@
 
   .sticky-section {
     display: flex;
-    width: 100vw;
-    justify-content: space-between;
-    padding: 40px;
-
+    justify-content: center;
+    position: relative;
+    background: blue;
   }
 
   .side-nav {
-    height: 5rem;
-    width: 10rem;
+    width: 100%;
+    height: 20%;
     background: green;
     flex-grow: 1;
     flex-basis: 300px;
@@ -104,37 +103,45 @@
     align-items: center;
     justify-content: center;
     position: sticky;
-    top: 2rem;
+    top: 10%;
+  }
+
+  .side-nav-container {
+    width: 100%;
+    background: red;
+  }
+
+  .side-nav-content {
+    display: grid;
   }
 
   .right-side {
-    height: 5rem;
-    width: 10rem;
+    width: 100%;
+    height: 20%;
     flex-grow: 1;
     flex-basis: 300px;
     display: flex;
     align-items: center;
     justify-content: center;
-    position: sticky;
-    top: 2rem;
   }
 
   .timeline-content {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 0;
   }
 
   .tl_background {
-    width: 80%;
-    margin: auto;
+    width: 100%;
+    margin: 0;
     display: block;
   }
 
   .tl_wrapper {
-      position: relative;
-      transform: translate3d(0, 0, 0);
-      width: 100%;
+    width: 100%;
+    position: relative;
+    transform: translate3d(0, 0, 0);
   }
 
   .timeline {

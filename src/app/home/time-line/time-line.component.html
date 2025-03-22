@@ -13,10 +13,12 @@
 
       <div class="sticky-section">
         <aside class="side-nav">
-          <div class="side-nav-content">
-            <a *ngFor="let year of getYears()" [href]="'#year-' + year" class="side-nav-link">
-              {{ year }}
-            </a>
+          <div class="side-nav-container">
+            <div class="side-nav-content">
+              <a *ngFor="let year of getYears()" [href]="'#year-' + year" class="side-nav-link">
+                {{ year }}
+              </a>
+            </div>
           </div>
         </aside>
         
