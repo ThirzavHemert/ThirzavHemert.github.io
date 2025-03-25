@@ -10,6 +10,7 @@ import { ToolingComponent } from './home/tooling/tooling.component';
 import { AboutMeComponent } from './about-me/about-me.component';
 import { ExtraOptions, RouterModule, Routes } from '@angular/router';
 import { TimeLineComponent } from './home/time-line/time-line.component';
+import { TimelineProjectComponent } from './home/timeline-project/timeline-project.component';
 
 const routerOptions: ExtraOptions = {
   anchorScrolling: 'enabled', // Enable scrolling to fragments
@@ -30,7 +31,8 @@ const routes: Routes = [
     NavBarComponent,
     ToolingComponent,
     AboutMeComponent,
-    TimeLineComponent
+    TimeLineComponent,
+    TimelineProjectComponent
   ],
   imports: [
     BrowserModule,

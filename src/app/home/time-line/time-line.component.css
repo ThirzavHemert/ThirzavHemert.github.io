@@ -214,26 +214,7 @@
     box-shadow: inset 0 0 10px rgb(10, 10, 10);
   }
 
-  .project-block{
-    display: flex;
-    
-  }
-
-  .project-content{
-    display: inline-block;
-    flex-grow: 4;
-    margin: auto;
-  }
-
-  .project-img-div {
-    flex-grow: 1;
-    margin: auto;
-  }
-
-  .image-project {
-    border-radius: 25px;
-    object-fit: contain;
-  }
+  
 
 
 }
