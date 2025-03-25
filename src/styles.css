@@ -23,10 +23,17 @@ html,body
     font-weight: bold;
     -webkit-text-stroke: 2px black;
     color: #09D009;
-    width: 10%;
+    width: auto;
+    display: inline-block;
     border-radius: 15px;
     border: green solid 1px;
-    padding: 10px;
+    padding: 10px 20px;
     background: #00152b;
     box-shadow: 0 0 5px 5px #09D009;
+}
+
+.sub-header-div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }

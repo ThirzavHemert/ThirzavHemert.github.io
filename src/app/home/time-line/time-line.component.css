@@ -1,8 +1,9 @@
 .timeline-container{
   position: relative;
-  max-height: 1500px;
+  max-height: 1200px;
   transition: max-height 0.5s ease-in-out;
   overflow: hidden;
+  flex-grow: 4;
 
   /* New background gradient */
   /* background: linear-gradient(to bottom, rgba(1, 27, 56, 1) 90%, rgba(1, 27, 56, 0)); */
@@ -72,20 +73,21 @@
   }
 
   .header {
-      text-align: center;
-      margin: auto;
-      margin-top: 3%;
-      font-size: 45px;
-      font-weight: bold;
-      -webkit-text-stroke: 2px black;
-      color: #09D009;
-      width: 10%;
-      border-radius: 15px;
-      border: green solid 1px;
-      padding: 10px;
-      background: #00152b;
-      box-shadow: 0 0 5px 5px #09D009;
-  }
+    text-align: center;
+    margin: auto;
+    margin-top: 3%;
+    margin-bottom: 8px;
+    font-size: 45px;
+    font-weight: bold;
+    -webkit-text-stroke: 2px black;
+    color: #09D009;
+    width: 10%;
+    border-radius: 15px;
+    border: green solid 1px;
+    padding: 10px;
+    background: #00152b;
+    box-shadow: 0 0 5px 5px #09D009;
+}
 
   .sticky-section {
     display: flex;
@@ -96,28 +98,14 @@
   .side-nav {
     width: 30%;
     height: 20%;
-    flex-grow: 2;
-    flex-basis: 300px;
+    margin-top: 5%;
     display: flex;
     align-items: center;
     justify-content: center;
     position: sticky;
     top: 10%;
     z-index: 1;
-    background: green;
-  }
-
-  .side-nav-right {
-    width: 30%;
-    height: 20%;
-    flex-grow: 1;
-    flex-basis: 300px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: sticky;
-    top: 10%;
-    z-index: 1;
+    flex-grow: 3;
   }
 
   .side-nav-container {
@@ -125,7 +113,6 @@
     border-radius: 25px;
     box-shadow: inset 0 0 5px rgb(10, 10, 10);
     padding: 25px;
-    margin-left: 55%;
     right: 0;
   }
 
