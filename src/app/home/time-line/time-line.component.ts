@@ -7,7 +7,7 @@ import { Project } from '../../models/project.model';
   styleUrls: ['./time-line.component.css']
 })
 export class TimeLineComponent implements OnInit {
-  isExpanded = true;
+  isExpanded = false;
 
   projects: Project[] = [
     { title: 'Project A', year: 2021, description: 'Description of Project A', image: 'https://loremflickr.com/200/200?random=1' },

@@ -11,16 +11,7 @@
     <div class="timeline">
       <div class="sub-header">Timeline</div>
 
-      <div class="sticky-section">
-        <aside class="side-nav">
-          <div class="side-nav-container">
-            <div class="side-nav-content">
-              <a *ngFor="let year of getYears()" [href]="'#year-' + year" class="side-nav-link">
-                {{ year }}
-              </a>
-            </div>
-          </div>
-        </aside>
+      
         
         <section class="timeline-content">
           <div class="tl_wrapper">
@@ -76,7 +67,9 @@
         </section>
         <aside class="right-side"></aside>
       </div>
+      
     </div>
+    
   </div>
   <div class="btn-div">
     <button class="expand-btn" (click)="toggleTimeline()">

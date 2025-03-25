@@ -2,6 +2,7 @@
   position: relative;
   max-height: 1500px;
   transition: max-height 0.5s ease-in-out;
+  overflow: hidden;
 
   /* New background gradient */
   /* background: linear-gradient(to bottom, rgba(1, 27, 56, 1) 90%, rgba(1, 27, 56, 0)); */
