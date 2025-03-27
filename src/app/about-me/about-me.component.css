@@ -1,4 +1,7 @@
 .am-container{
   height: 1500px;
-  background: green;
+
+  .dark-blue {
+    background: #01234a;
+  }
 }
