@@ -1,7 +1,34 @@
 .am-container{
   height: 1500px;
+  background: #012e61;
 
   .dark-blue {
     background: #01234a;
+  }
+
+  .am-header {
+    opacity: 0.8;
+  }
+
+  .content-wrapper {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify: space-between;
+    margin-top: 3%;
+    border-radius: 15px;
+    border: green solid 1px;
+  }
+
+  .am-content {
+    flex: 1;
+    margin: 20px;
+    border-radius: 15px;
+    border: green solid 1px;
+    
+  }
+
+  .hero {
+    
   }
 }
