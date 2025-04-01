@@ -5,12 +5,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { LandingPageComponent } from './home/landing-page/landing-page.component';
-import { NavBarComponent } from './nav-bar/nav-bar.component';
+import { NavBarComponent } from './shared/nav-bar/nav-bar.component';
 import { ToolingComponent } from './home/tooling/tooling.component';
 import { AboutMeComponent } from './about-me/about-me.component';
 import { ExtraOptions, RouterModule, Routes } from '@angular/router';
 import { TimeLineComponent } from './home/time-line/time-line.component';
 import { TimelineProjectComponent } from './home/timeline-project/timeline-project.component';
+import { FooterComponent } from './shared/footer/footer.component';
 
 const routerOptions: ExtraOptions = {
   anchorScrolling: 'enabled', // Enable scrolling to fragments
@@ -32,7 +33,8 @@ const routes: Routes = [
     ToolingComponent,
     AboutMeComponent,
     TimeLineComponent,
-    TimelineProjectComponent
+    TimelineProjectComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
