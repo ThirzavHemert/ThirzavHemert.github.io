@@ -23,10 +23,10 @@
   .am-content {
     margin: 20px;
     align-content: center;
-    background: #01234a;
+    background:rgb(3, 38, 78);
     border-radius: 15px;
     border: #01234a solid 1px;
-    box-shadow: inset 0 0 10px rgb(10, 10, 10);
+    box-shadow: inset 0 0 15px rgb(10, 10, 10);
     
   }
 
@@ -49,5 +49,25 @@
   p {
     color: #E1D9D1;
     font-size: 20px;
+  }
+
+  h1 {
+    color: #E1D9D1;
+  }
+
+  .links {
+    display: flex;
+    width: 50%;
+    margin: auto;
+    max-height: 12%;
+  }
+
+  .icon {
+    flex: 1;
+  }
+
+  .link-icon {
+    height: 80%;
+    margin: 0 auto
   }
 }
