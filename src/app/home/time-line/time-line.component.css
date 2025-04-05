@@ -198,4 +198,26 @@
     text-align: center;
   }
 
+  @media (max-width: 700px) {  
+
+    .side-nav {
+      margin-left: 1%;
+    }
+    .side-nav-container {
+      border-radius: 10px;
+      padding: 10px;
+    }
+  
+    .side-nav-content {
+      grid-gap: 15px 25px;
+    }
+    
+    .side-nav-link {
+      padding: 10px 20px;
+      font-size: 15px;
+      border-radius: 10px;
+    }
+  }
+
 }
+
