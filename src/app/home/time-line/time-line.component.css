@@ -147,8 +147,8 @@
     flex-grow: 4;
     align-items: center;
     margin: 0;
-    padding-left: 5%;
-    padding-right: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
   }
 
   .tl_background {
@@ -170,37 +170,43 @@
   .year0 {
     position: absolute;
     top: 68%;
-    left: 75%;
+    left: 85%;
     transform: translate(-50%, -50%);
     color: white; 
     z-index: 1;
-    font-size: 60px;
+    font-size: 5rem;
     text-align: center;
   }
 
   .year1 {
     position: absolute;
     top: 60%;
-    left: 25%;
+    left: 15%;
     transform: translate(-50%, -50%);
     color: white; 
     z-index: 1;
-    font-size: 60px;
+    font-size: 5rem;
     text-align: center;
   }
 
   .year2 {
     position: absolute;
     top: 60%;
-    left: 75%;
+    left: 85%;
     transform: translate(-50%, -50%);
     color: white; 
     z-index: 1;
-    font-size: 60px;
+    font-size: 5rem;
     text-align: center;
   }
 
-  @media (max-width: 700px) {  
+  @media screen and (max-width: 1600px) {  
+    .year0, .year1, .year2{
+      font-size: 3.75rem;
+    }
+  }
+
+  @media screen and (max-width: 1300px) {  
 
     .side-nav {
       margin-left: 1%;
@@ -220,7 +226,107 @@
       font-size: 15px;
       border-radius: 10px;
     }
+
+    .year0, .year1, .year2{
+      font-size: 3.25rem;
+      color: blue;
+    }
   }
+
+  
+  @media screen and (max-width: 1000px) {  
+
+    .side-nav {
+      margin-left: 1%;
+    }
+
+    .side-nav-container {
+      border-radius: 10px;
+      padding: 10px;
+    }
+  
+    .side-nav-content {
+      grid-gap: 15px 25px;
+    }
+    
+    .side-nav-link {
+      padding: 10px 20px;
+      font-size: 15px;
+      border-radius: 10px;
+    }
+
+    .year0, .year1, .year2{
+      font-size: 2.75rem;
+      color: green;
+    }
+  }
+
+  @media screen and (max-width: 850px) {  
+    .year0, .year1, .year2{
+      font-size: 2.25rem;
+    }
+  }
+  
+
+  @media screen and (max-width: 700px) {  
+
+    .side-nav {
+      margin-left: 1%;
+    }
+
+    .side-nav-container {
+      border-radius: 10px;
+      padding: 10px;
+    }
+  
+    .side-nav-content {
+      grid-gap: 15px 25px;
+    }
+    
+    .side-nav-link {
+      padding: 10px 20px;
+      font-size: 15px;
+      border-radius: 10px;
+    }
+
+    .year0, .year1, .year2{
+      font-size: 1.75rem;
+    }
+  }
+
+  /* @media (max-width: 1000px) {  
+
+    .side-nav {
+      margin-left: 1%;
+    }
+
+    .side-nav-container {
+      border-radius: 10px;
+      padding: 10px;
+    }
+  
+    .side-nav-content {
+      grid-gap: 15px 25px;
+    }
+    
+    .side-nav-link {
+      padding: 10px 20px;
+      font-size: 15px;
+      border-radius: 10px;
+    }
+
+    .year0{
+      font-size: 2.75rem;
+    }
+
+    .year1{
+      font-size: 2.75rem;
+    }
+
+    .year2{
+      font-size: 2.75rem;
+    }
+  } */
 
 }
 

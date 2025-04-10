@@ -37,3 +37,23 @@ html,body
     display: flex;
     justify-content: center;
 }
+
+@media (max-width: 700px) {  
+    .sub-header {
+        text-align: center;
+        margin: auto;
+        margin-top: 3%;
+        margin-bottom: 8px;
+        font-size: 1.5rem;
+        font-weight: normal;
+        -webkit-text-stroke: 0px;
+        color: #09D009;
+        width: auto;
+        display: inline-block;
+        border-radius: 15px;
+        border: green solid 1px;
+        padding: 10px 20px;
+        background: #00152b;
+        box-shadow: 0 0 5px 5px #09D009;
+    }
+}
