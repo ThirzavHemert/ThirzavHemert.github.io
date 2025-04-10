@@ -92,18 +92,6 @@
 }
 
 @media screen and (max-width: 1000px) {  
-  /* .image-project {
-    border-radius: 10px;
-  }
-
-  .project-content{
-    padding: 1rem;
-  }
-
-  .title {
-    font-size: 1em
-  } */
-  
   .descr {
     font-size: 0.7em;
     -webkit-line-clamp: 7;
@@ -111,18 +99,6 @@
 }
 
 @media (max-width: 700px) {
-  /* .image-project {
-    border-radius: 10px;
-  }
-
-  .project-content{
-    padding: 1rem;
-  }
-
-  .title {
-    font-size: 1em
-  } */
-  
   .descr {
     font-size: 0.7em;
     -webkit-line-clamp: 5;
