@@ -264,6 +264,7 @@
   @media screen and (max-width: 850px) {  
     .year0, .year1, .year2{
       font-size: 2.25rem;
+      color: yellow;
     }
   }
   
@@ -291,42 +292,9 @@
 
     .year0, .year1, .year2{
       font-size: 1.75rem;
+      color: red;
     }
   }
-
-  /* @media (max-width: 1000px) {  
-
-    .side-nav {
-      margin-left: 1%;
-    }
-
-    .side-nav-container {
-      border-radius: 10px;
-      padding: 10px;
-    }
-  
-    .side-nav-content {
-      grid-gap: 15px 25px;
-    }
-    
-    .side-nav-link {
-      padding: 10px 20px;
-      font-size: 15px;
-      border-radius: 10px;
-    }
-
-    .year0{
-      font-size: 2.75rem;
-    }
-
-    .year1{
-      font-size: 2.75rem;
-    }
-
-    .year2{
-      font-size: 2.75rem;
-    }
-  } */
 
 }
 
