@@ -5,7 +5,8 @@
     overflow: hidden;
     display: flex;
     align-items: center;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-between;
     
 
     .background-image {
@@ -19,9 +20,10 @@
     }
 
     .wrapper {
-        position: relative;
-        z-index: 1;
-        height: 75vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         margin: auto;
     }
 
@@ -30,75 +32,92 @@
     }
 
     .hero-wrapper{
-        margin: auto;
         height: 55vh;
-        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 
     .hero-image {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        height: auto;  
+        max-height: 100%;
+        max-width: 100%;
+        object-fit: contain;
+    }
+
+    .text-div {
+        margin-bottom: 5%;
+        width: 20%;
     }
 
     .bottom-text {
-        position: relative;
         text-align: center;
         margin: auto;
-        margin-top: 10%;
         font-size: 25px;
         color: white;
-        width: 50%;
-        padding: 5px 0px 5px 0px;
+        padding: 10px 0px 10px 0px;
         border-radius: 15px;
         border: solid 1px #1b7a30;
         background: #000F20;
         opacity: 0.9;
         box-shadow: 0 0 10px 1px #1b7a30;
+        bottom: 0;
     }
 
     @media screen and (max-width: 1600px) {  
 
+        .text-div {
+            margin-bottom: 7%;
+            width: 35%;
+        }
+
     }
     
     @media screen and (max-width: 1300px) {  
-    
-    
+
+        .text-div {
+            margin-bottom: 7%;
+            width: 35%;
+        }
+
+        .bottom-text {
+            font-size: 1.3rem;
+        }
     }
     
     
     @media screen and (max-width: 1000px) {  
-    
+        .wrapper {
+            width: 90vw;
+        }
     }
     
-    @media screen and (max-width: 850px) {  
+    @media screen and (max-width: 850px) {
 
+        .text-div {
+            margin-bottom: 14%;
+            width: 40%;
+        }
+
+        .bottom-text {
+            font-size: 1.1rem;
+        }
     }
     
     
     @media screen and (max-width: 700px) {  
-        .background-image{
-            height: 100%;
-            width: 100%;
-            object-fit: cover;
-        } 
 
-        /* .hero-wrapper{
-            margin: auto;
-            height: 100%;
-            background: green;
-            width: 75%;
-            text-align: center;
-            margin-top: 10%;
+        .wrapper {
+            width: 80vw;
+        }
+
+        .text-div {
+            margin-bottom: 18%;
+            width: 50%;
         }
     
-        .hero-image {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            width: 100%;
-            height: auto;  
-        } */
+        h1 {
+            font-size: 1.5rem;
+        }
     }
 }
