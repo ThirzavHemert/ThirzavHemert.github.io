@@ -1,54 +1,96 @@
-ul {
-    display: flex;
-    align-items: stretch; /* Default */
-    justify-content: space-between;
-    width: 100%;
-    height: 100%;
-    background: #1e1e20;
-    margin: 0;
-    padding: 0;
-    overflow: hidden; /* Prevent content from spilling over the rounded edges */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-li {
-    display: block;
-    flex: 1 ; /* Default */
-    list-style-type: none;
-    font-size: 20px;
-    padding: 10px;
-    height: 100%;
-    text-align: center;
-    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions for hover and click */
-    cursor: pointer;
-}
-
-li:hover {
-    background-color: #3d3d43; /* Highlight on hover */
-}
-
-.link-active {
-    background-color: #18181b;
-    color: #0bd109;
-}
-
-li.link-active > a {
-    color: #0bd109; /* Explicitly target the active link's text */
-}
-
-a {
-    text-decoration: none;
-    color: white
-}
-
-.header {
-    width: 100%;
+.navbar-component {
     box-sizing: border-box;
-    background: #1e1e20;
-}
+    position: absolute;
+    width: 100%;
+    margin-top: 1%;
+    z-index: 2;
 
-.container {
-    width: 40%;
-    margin: auto;
-    height: 100%;
+
+    .container {
+        width: 40%;
+        margin: auto;
+        height: 100%;
+    }
+
+    .nav-bordera {
+        border-top-left-radius:30px;
+        border-bottom-left-radius:30px;   
+    }
+        
+    .nav-borderb {
+        border-top-right-radius:30px;
+        border-bottom-right-radius:30px;  
+    }
+
+    li.link-active > a {
+        color: #0a9e07;
+        font-weight: bold;
+    }
+
+    a {
+        text-decoration: none;
+        color: #E1D9D1;
+    }
+
+    ul {
+        display: flex;
+        align-items: stretch;
+        justify-content: space-between;
+        width: 100%;
+        height: 100%;
+        
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    li {
+        display: block;
+        flex: 1 ;
+        list-style-type: none;
+        background: #1e1e20;
+        font-size: 20px;
+        padding: 10px;
+        height: 100%;
+        text-align: center;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+        cursor: pointer;
+    }
+
+    li:hover {
+        background-color: #3d3d43;
+    }
+
+    
+
+    @media screen and (max-width: 1600px) {  
+
+    }
+    
+    @media screen and (max-width: 1300px) {  
+        .container {
+            width: 55%;
+        }
+    }
+    
+    
+    @media screen and (max-width: 1000px) {  
+        .container {
+            width: 60%;
+        }
+    }
+    
+    @media screen and (max-width: 850px) {
+        .container {
+            width: 65%;
+        }
+    }
+    
+    
+    @media screen and (max-width: 700px) {  
+        .container {
+            width: 70%;
+        }
+    }
 }

@@ -1,14 +1,17 @@
-<div class="header">
+<div class="navbar-component">
 	<nav>
 		<div class="container">
 			<ul>
-				<li class="nav-item" [routerLink]="'/'" [routerLinkActive]="['link-active']" [routerLinkActiveOptions]="{ exact: true }">
+				<li class="nav-item nav-bordera" [routerLink]="'/'" [routerLinkActive]="['link-active']" [routerLinkActiveOptions]="{ exact: true }">
 					<a class="nav-link" >Home</a>
 				</li>
 				<li class="nav-item" [routerLink]="['/aboutMe']" [routerLinkActive]="['link-active']" [routerLinkActiveOptions]="{ exact: true }">
 					<a class="nav-link" >About me</a>
 				</li>
-				<li class="nav-item" [routerLink]="['/resume']" [routerLinkActive]="['link-active']" [routerLinkActiveOptions]="{ exact: true }">
+				<li class="nav-item" [routerLink]="['/projects']" [routerLinkActive]="['link-active']" [routerLinkActiveOptions]="{ exact: true }">
+					<a class="nav-link" >Projects</a>
+				</li>
+				<li class="nav-item nav-borderb" [routerLink]="['/resume']" [routerLinkActive]="['link-active']" [routerLinkActiveOptions]="{ exact: true }">
 					<a class="nav-link" >Resume</a>
 				</li>
 			</ul>
