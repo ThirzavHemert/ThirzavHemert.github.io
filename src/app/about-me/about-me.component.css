@@ -16,8 +16,6 @@
     display: flex;
     justify: space-between;
     margin-top: 3%;
-    /* border-radius: 15px;
-    border: #01234a solid 1px; */
   }
 
   .am-content {
@@ -69,5 +67,65 @@
   .link-icon {
     height: 80%;
     margin: 0 auto
+  }
+
+  @media screen and (max-width: 1600px) {  
+    .description p {
+      font-size: 1.2rem;
+    }
+
+    .description h1 {
+      font-size: 1.7rem;
+    }
+  }
+
+  @media screen and (max-width: 1300px) {  
+    .description p {
+      font-size: 1.1rem;
+    }
+
+    .description h1 {
+      font-size: 1.7rem;
+    }
+
+    .content-wrapper {
+      width: 80%;
+    }
+  }
+
+
+  @media screen and (max-width: 1000px) {  
+    .description p {
+      font-size: 1rem;
+    }
+
+    .description h1 {
+      font-size: 1.5rem;
+    }
+
+    .content-wrapper {
+      width: 85%;
+    }
+  }
+
+  @media screen and (max-width: 850px) {
+    .description p {
+      font-size: 0.8rem;
+    }
+
+    .description h1 {
+      font-size: 1.3rem;
+    }
+
+    .content-wrapper {
+      width: 90%;
+    }
+  }
+
+
+  @media screen and (max-width: 700px) {  
+    .description {
+      background: blue;
+    }
   }
 }
