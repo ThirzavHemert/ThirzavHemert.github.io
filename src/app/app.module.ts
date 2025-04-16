@@ -12,6 +12,7 @@ import { ExtraOptions, RouterModule, Routes } from '@angular/router';
 import { TimeLineComponent } from './home/time-line/time-line.component';
 import { TimelineProjectComponent } from './home/timeline-project/timeline-project.component';
 import { FooterComponent } from './shared/footer/footer.component';
+import { ProjectDetailComponent } from './project-detail/project-detail.component';
 
 const routerOptions: ExtraOptions = {
   anchorScrolling: 'enabled', // Enable scrolling to fragments
@@ -21,7 +22,8 @@ const routerOptions: ExtraOptions = {
 const routes: Routes = [
   { path: '', component: HomeComponent, pathMatch: 'full' },
   { path: 'aboutMe', component: AboutMeComponent },
-  { path: '**', redirectTo: '' }, // Redirect unknown routes to Home
+  { path: 'projects', component: ProjectDetailComponent },
+  { path: '**', redirectTo: '' },
 ];
 
 @NgModule({
@@ -34,7 +36,8 @@ const routes: Routes = [
     AboutMeComponent,
     TimeLineComponent,
     TimelineProjectComponent,
-    FooterComponent
+    FooterComponent,
+    ProjectDetailComponent
   ],
   imports: [
     BrowserModule,
