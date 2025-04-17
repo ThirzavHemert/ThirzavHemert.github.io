@@ -2,10 +2,11 @@
   background: #10472d;
 
   .wave_bg {
-    background: #012e61;
+    background:transparent;
   }
 
   .content-wrapper {
+    background: #10472d;
     display: flex;
     margin: auto;
     height: 150px;
