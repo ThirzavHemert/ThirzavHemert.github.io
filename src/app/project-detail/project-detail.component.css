@@ -58,6 +58,7 @@
     height: 40%;
     border-radius: 15px;
     border: green solid 1px;
+    box-shadow: 0 0 5px 5px #09D009;
   }
   
   .image-project {
@@ -99,6 +100,30 @@
     display: flex;
     width: 100%;
     column-gap: 10%;
+  }
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  
+  .column {
+    padding: 0 4px;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+  }
+  
+  .buttons {
+    margin-top: 20px;
+  
+    button {
+      margin-right: 10px;
+    }
   }
 }
 
