@@ -23,7 +23,7 @@ const routerOptions: ExtraOptions = {
 const routes: Routes = [
   { path: '', component: HomeComponent, pathMatch: 'full' },
   { path: 'aboutMe', component: AboutMeComponent },
-  { path: 'allProjects', component: ProjectDetailComponent },
+  { path: 'allProjects', component: ProjectListComponent },
   { path: 'projects/:id', component: ProjectDetailComponent },
   { path: '**', redirectTo: '' },
 ];
