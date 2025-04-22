@@ -13,6 +13,7 @@ import { TimeLineComponent } from './home/time-line/time-line.component';
 import { TimelineProjectComponent } from './home/timeline-project/timeline-project.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { ProjectDetailComponent } from './project-detail/project-detail.component';
+import { ProjectListComponent } from './project-list/project-list.component';
 
 const routerOptions: ExtraOptions = {
   anchorScrolling: 'enabled', // Enable scrolling to fragments
@@ -22,7 +23,8 @@ const routerOptions: ExtraOptions = {
 const routes: Routes = [
   { path: '', component: HomeComponent, pathMatch: 'full' },
   { path: 'aboutMe', component: AboutMeComponent },
-  { path: 'projects', component: ProjectDetailComponent },
+  { path: 'allProjects', component: ProjectDetailComponent },
+  { path: 'projects/:id', component: ProjectDetailComponent },
   { path: '**', redirectTo: '' },
 ];
 
@@ -37,7 +39,8 @@ const routes: Routes = [
     TimeLineComponent,
     TimelineProjectComponent,
     FooterComponent,
-    ProjectDetailComponent
+    ProjectDetailComponent,
+    ProjectListComponent
   ],
   imports: [
     BrowserModule,

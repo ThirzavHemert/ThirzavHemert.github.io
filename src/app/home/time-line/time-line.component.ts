@@ -10,17 +10,17 @@ export class TimeLineComponent implements OnInit {
   isExpanded = false;
 
   projects: Project[] = [
-    { title: 'Project A', year: 2021, description: 'Description of Project A', image: 'https://loremflickr.com/200/200?random=1' },
-    { title: 'Project B', year: 2021, description: 'Description of Project B', image: 'https://loremflickr.com/200/200?random=1' },
-    { title: 'Project C', year: 2021, description: 'Description of Project C', image: 'https://loremflickr.com/200/200?random=1' },
-    { title: 'Project D', year: 2022, description: 'Description of Project D', image: 'https://loremflickr.com/200/200?random=1' },
-    { title: 'Project E', year: 2022, description: 'Description of Project E', image: 'https://loremflickr.com/200/200?random=1' },
-    { title: 'Project F', year: 2022, description: 'Description of Project F', image: 'https://loremflickr.com/200/200?random=1' },
-    { title: 'Project G', year: 2022, description: 'Description of Project G', image: 'https://loremflickr.com/200/200?random=1' },
-    { title: 'Project H', year: 2023, description: 'Description of Project H', image: 'https://loremflickr.com/200/200?random=1' },
-    { title: 'Project I', year: 2023, description: 'Description of Project I', image: 'https://loremflickr.com/200/200?random=1' },
-    { title: 'Project J', year: 2023, description: 'Description of Project J', image: 'https://loremflickr.com/200/200?random=1' },
-    { title: 'Project K', year: 2023, description: 'Description of Project K', image: 'https://loremflickr.com/200/200?random=1' },
+    { id: 0, title: 'Project A', year: 2021, description: 'Description of Project A', image: 'https://loremflickr.com/200/200?random=1' },
+    { id: 1, title: 'Project B', year: 2021, description: 'Description of Project B', image: 'https://loremflickr.com/200/200?random=1' },
+    { id: 2, title: 'Project C', year: 2021, description: 'Description of Project C', image: 'https://loremflickr.com/200/200?random=1' },
+    { id: 3, title: 'Project D', year: 2022, description: 'Description of Project D', image: 'https://loremflickr.com/200/200?random=1' },
+    { id: 4, title: 'Project E', year: 2022, description: 'Description of Project E', image: 'https://loremflickr.com/200/200?random=1' },
+    { id: 5, title: 'Project F', year: 2022, description: 'Description of Project F', image: 'https://loremflickr.com/200/200?random=1' },
+    { id: 6, title: 'Project G', year: 2022, description: 'Description of Project G', image: 'https://loremflickr.com/200/200?random=1' },
+    { id: 7, title: 'Project H', year: 2023, description: 'Description of Project H', image: 'https://loremflickr.com/200/200?random=1' },
+    { id: 8, title: 'Project I', year: 2023, description: 'Description of Project I', image: 'https://loremflickr.com/200/200?random=1' },
+    { id: 9, title: 'Project J', year: 2023, description: 'Description of Project J', image: 'https://loremflickr.com/200/200?random=1' },
+    { id: 10, title: 'Project K', year: 2023, description: 'Description of Project K', image: 'https://loremflickr.com/200/200?random=1' },
   ];
 
   groupedProjects: { [year: number]: Project[] } = {};
@@ -51,6 +51,7 @@ export class TimeLineComponent implements OnInit {
     for (const year in projectMap) {
       if (projectMap[year].length % 2 === 0) {
         projectMap[year].push({
+          id: -1,
           title: "Placeholder",
           year: parseInt(year),
           description: "",
