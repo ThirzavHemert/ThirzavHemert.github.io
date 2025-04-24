@@ -1,6 +1,7 @@
 .project-item {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
+  display: flex;
+  flex-direction: row;
+  aspect-ratio: 4 / 2;
   gap: 20px;
   alignt-items: start;
   padding: 10px;
@@ -11,17 +12,21 @@
 }
 
 .card-text {
-  display: flex;
-  flex-direction: column;
+  flex: 2;
   padding: 15px 0px 0px 10px;
 }
 
 .card-image {
+  flex: 1;
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   align-items: end;
-  margin: 0;
-  flex-grow: 0;
-  flex-shrink: 0;
   padding: 15px 10px 15px 0px;
 }
+
+.image-project{
+  max-width: 100%;
+  max-height: 100%;;
+  object-fit: cover;
+}
+
