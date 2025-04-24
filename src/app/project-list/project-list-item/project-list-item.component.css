@@ -1,0 +1,27 @@
+.project-item {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+  alignt-items: start;
+  padding: 10px;
+  border-radius: 15px;
+  border: green solid 1px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.card-text {
+  display: flex;
+  flex-direction: column;
+  padding: 15px 0px 0px 10px;
+}
+
+.card-image {
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  margin: 0;
+  flex-grow: 0;
+  flex-shrink: 0;
+  padding: 15px 10px 15px 0px;
+}

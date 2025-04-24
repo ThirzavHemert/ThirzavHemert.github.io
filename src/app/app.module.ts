@@ -14,6 +14,9 @@ import { TimelineProjectComponent } from './home/timeline-project/timeline-proje
 import { FooterComponent } from './shared/footer/footer.component';
 import { ProjectDetailComponent } from './project-detail/project-detail.component';
 import { ProjectListComponent } from './project-list/project-list.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ProjectListItemComponent } from './project-list/project-list-item/project-list-item.component';
+import {MatCardModule} from '@angular/material/card';
 
 const routerOptions: ExtraOptions = {
   anchorScrolling: 'enabled', // Enable scrolling to fragments
@@ -40,12 +43,16 @@ const routes: Routes = [
     TimelineProjectComponent,
     FooterComponent,
     ProjectDetailComponent,
-    ProjectListComponent
+    ProjectListComponent,
+    ProjectListItemComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    [RouterModule.forRoot(routes, { anchorScrolling: 'enabled', scrollPositionRestoration: 'enabled' })],
+    [RouterModule.forRoot(routes, { anchorScrolling: 'enabled', scrollPositionRestoration: 'enabled' }),
+    BrowserAnimationsModule,
+    MatCardModule,
+  ],
   ],
   providers: [],
   bootstrap: [AppComponent]
