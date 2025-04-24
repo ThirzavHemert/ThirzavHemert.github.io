@@ -30,8 +30,9 @@
   }
 
   .content-wrapper {
-    background-image: linear-gradient( #001934, #011E42);
+    background-image: linear-gradient(#001021, #011b38);
     width: 100vw;
+    padding: 2% 5% 2% 5%;
   }
 
   .divider {
@@ -45,5 +46,34 @@
     grid-template-columns: repeat(auto-fit, minmax(700px, 1fr));
     gap: 50px;
     padding: 10px;
+  }
+
+  @media screen and (max-width: 1700px) {
+    .project-grid {
+      background: green;
+      grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    }
+  
+  }
+  
+  @media screen and (max-width: 1300px) {  
+    .project-grid {
+      background: yellow;
+      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    }
+  }
+  
+  @media screen and (max-width: 1000px) {  
+    .project-grid {
+      background: pink;
+      margin: auto;
+      width: 70%;
+    }
+  }
+  
+  @media (max-width: 700px) {
+    .project-grid {
+      grid-template-columns: repeat(auto-fit, minmax(700px, 1fr));
+    }
   }
 }
