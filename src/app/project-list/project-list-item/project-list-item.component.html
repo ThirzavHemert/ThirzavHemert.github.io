@@ -1,12 +1,12 @@
 <div class="project-item"> 
   <div class="card-text">
-    <h2>Project Name</h2>
+    <h2>{{ project.title }}</h2>
     <p>
-      Lorem ipsum dolor sit amet. Et eveniet incidunt et omnis quas et libero dignissimos! Ut dolore perferendis aut corporis autem qui repellat quisquam eos quia cumque.
+      {{ project.description }}
     </p>
   </div>
 
   <div class="card-image">
-    <img mat-card-image src="https://picsum.photos/200/300">
+    <img [src]="project.image">
   </div>
 </div>
