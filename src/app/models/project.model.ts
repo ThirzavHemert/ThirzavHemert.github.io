@@ -4,4 +4,5 @@ export interface Project {
   year: number;
   description: string;
   image: string;
+  tools: Array<string>;
 }
