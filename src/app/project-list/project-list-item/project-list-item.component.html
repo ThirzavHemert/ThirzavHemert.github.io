@@ -6,6 +6,15 @@
       <p>
         {{ project.description }}
       </p>
+
+      <div class="card-bottom">
+        <hr>
+        <div class="tools">
+          <p *ngFor="let tool of project.tools" id="tool">{{ tool }}</p>
+        </div>
+
+      </div>
+      
     </div>
 
     <div class="card-image">
