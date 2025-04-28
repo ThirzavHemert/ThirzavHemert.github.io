@@ -51,7 +51,16 @@
   @media screen and (max-width: 1700px) {
     .project-grid {
       background: green;
-      grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(550px, 1fr));
+    }
+  
+  }
+
+  @media screen and (max-width: 1500px) {
+    .project-grid {
+      background: red;
+      gap: 40px;
+      grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
     }
   
   }
@@ -59,21 +68,31 @@
   @media screen and (max-width: 1300px) {  
     .project-grid {
       background: yellow;
-      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    }
-  }
-  
-  @media screen and (max-width: 1000px) {  
-    .project-grid {
-      background: pink;
       margin: auto;
       width: 70%;
     }
   }
   
+  @media screen and (max-width: 1100px) {  
+    .project-grid {
+      background: pink;
+      width: 80%;
+      margin: auto;
+      
+    }
+  }
+  
+  @media (max-width: 900px) {
+    .project-grid {
+      background: green;
+      width: 85%;
+    }
+  }
+
   @media (max-width: 700px) {
     .project-grid {
-      grid-template-columns: repeat(auto-fit, minmax(700px, 1fr));
+      background: red;
+      width: 90%;
     }
   }
 }
