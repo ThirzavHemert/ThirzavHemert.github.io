@@ -1,5 +1,6 @@
 import { AfterViewInit, Component, ElementRef, HostListener, OnInit, QueryList, ViewChild, ViewChildren } from '@angular/core';
 import { Project } from '../../models/project.model';
+import { ProjectService } from 'src/app/project.service';
 
 @Component({
   selector: 'app-time-line',
@@ -9,24 +10,23 @@ import { Project } from '../../models/project.model';
 export class TimeLineComponent implements OnInit {
   isExpanded = false;
 
-  projects: Project[] = [
-    { id: 0, title: 'Project A', year: 2021, description: 'Description of Project A', image: 'https://loremflickr.com/200/200?random=1', tools: ["Angular", "SQL", "TailwindCSS"] },
-    { id: 1, title: 'Project B', year: 2021, description: 'Description of Project B', image: 'https://loremflickr.com/200/200?random=1', tools: ["Angular", "SQL", "TailwindCSS"] },
-    { id: 2, title: 'Project C', year: 2021, description: 'Description of Project C', image: 'https://loremflickr.com/200/200?random=1', tools: ["Angular", "SQL", "TailwindCSS"] },
-    { id: 3, title: 'Project D', year: 2022, description: 'Description of Project D', image: 'https://loremflickr.com/200/200?random=1', tools: ["Angular", "SQL", "TailwindCSS"] },
-    { id: 4, title: 'Project E', year: 2022, description: 'Description of Project E', image: 'https://loremflickr.com/200/200?random=1' , tools: ["Angular", "SQL", "TailwindCSS"]},
-    { id: 5, title: 'Project F', year: 2022, description: 'Description of Project F', image: 'https://loremflickr.com/200/200?random=1' , tools: ["Angular", "SQL", "TailwindCSS"]},
-    { id: 6, title: 'Project G', year: 2022, description: 'Description of Project G', image: 'https://loremflickr.com/200/200?random=1', tools: ["Angular", "SQL", "TailwindCSS"] },
-    { id: 7, title: 'Project H', year: 2023, description: 'Description of Project H', image: 'https://loremflickr.com/200/200?random=1' , tools: ["Angular", "SQL", "TailwindCSS"]},
-    { id: 8, title: 'Project I', year: 2023, description: 'Description of Project I', image: 'https://loremflickr.com/200/200?random=1', tools: ["Angular", "SQL", "TailwindCSS"] },
-    { id: 9, title: 'Project J', year: 2023, description: 'Description of Project J', image: 'https://loremflickr.com/200/200?random=1', tools: ["Angular", "SQL", "TailwindCSS"] },
-    { id: 10, title: 'Project K', year: 2023, description: 'Description of Project K', image: 'https://loremflickr.com/200/200?random=1', tools: ["Angular", "SQL", "TailwindCSS"] },
-  ];
+  projects: Project[] = [];
 
   groupedProjects: { [year: number]: Project[] } = {};
 
+  constructor(private projectService: ProjectService){}
+
   ngOnInit() {
-    this.groupProjectsByYear();
+    this.projectService.getData().subscribe(
+        data => {
+          console.log("Received data:", data);
+          this.projects = data,
+          this.groupProjectsByYear();
+        },
+        error => console.error("Error fetching data: ", error)
+      );
+    
+
   }
 
   getYears(): number[] {
@@ -54,9 +54,15 @@ export class TimeLineComponent implements OnInit {
           id: -1,
           title: "Placeholder",
           year: parseInt(year),
+          short_desc: "",
           description: "",
-          image: "",
+          key_features: [],
+          technical_desc: "",
+          task: "",
+          language: [],
           tools: [],
+          client: "",
+          images: "",
         }); // Add a full placeholder project
       }
     }

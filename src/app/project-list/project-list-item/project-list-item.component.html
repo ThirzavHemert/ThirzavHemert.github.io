@@ -6,11 +6,18 @@
       <p>
         {{ project.description }}
       </p>
+      <h3>Key Features</h3>
+      <p>
+        {{ project.key_features }}
+      </p>
+      <p>
+        {{ project.technical_desc }}
+      </p>
 
       <div class="card-bottom">
         <hr>
         <div class="tools">
-          <p *ngFor="let tool of project.tools" id="tool">{{ tool }}</p>
+          <p *ngFor="let tool of project.language" id="tool">{{ tool }}</p>
         </div>
 
       </div>
@@ -18,7 +25,7 @@
     </div>
 
     <div class="card-image">
-      <img [src]="project.image" class="image-project">
+      <img [src]="project.images" class="image-project">
     </div>
   </div>
 </div>

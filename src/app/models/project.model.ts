@@ -1,8 +1,14 @@
 export interface Project {
-  id: number,
+  id: number;
   title: string;
   year: number;
+  short_desc: string;
   description: string;
-  image: string;
+  key_features: Array<string>;
+  technical_desc: string;
+  task: string;
+  language: Array<string>;
   tools: Array<string>;
+  client: string;
+  images: string;
 }

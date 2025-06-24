@@ -1,0 +1,131 @@
+[
+  {
+    "id": 0,
+    "title": "PharmaPartners",
+    "year": 2020,
+    "short_desc": "A mobile solution for general practitioners to streamline home visit consultations through digitization. Built using AngularJS and JavaScript, this tool reduces the workload on an administrative level and encourages more time with the patient, and thus better patient care",
+    "description": "PharmaPartners is a Dutch healthcare IT company dedicated to improving the accessibility and quality of healthcare. This project aims to address the increasing workload of general practitioners, who are dealing with rising patient demands and a shortage of staff. \nThe goal of this project was to develop a solution that provides the GPs with real-time access to patient data during home visits. Traditionally, GPs write out a physical form with the necessary information. This application replaces that process with a digital interface, enabling Gps to use and update the information directly. This leads to less administrative workload, more focus on the patient, and thus better healthcare.",
+    "key_features": [
+      "A digital version of the visit form with a daily patient overview",
+      "Access to the patient file such as episode lists, journal entrie, medication overview and diagnostics",
+      "Secure logging features"
+    ],
+    "technical_desc": "The front end was developed in AngularJS and the back end in JavaScript using a controller-model structure. As this project is meant as a prototype for the company, integration with the full Medicom system was not possible due to privacy and access restrictions.",
+    "task": "Building a prototype for digitizing and streamlining home visit consultations. \nLearning goals include working with a Product Owner and web development",
+    "language": [
+      "JavaScript"
+    ],
+    "tools": [
+      "Angular",
+      "CI/CD Pipeline",
+      "Gitlab",
+      "Scrum"
+    ],
+    "client": "PharmaPartners (School Project)",
+    "images": ""
+  },
+  {
+    "id": 1,
+    "title": "Just Vega",
+    "year": 2020,
+    "short_desc": "A high-end culinary Android app focused on vegetarian and vegan cooking. Built using Android Studio, Java and Firebase, this project brings restaurant-level reciped to home chefs, with a string emphasis on usability and design.",
+    "description": "Just Vega is a culinary platform designed to revolutionize how people perceive and experience vegetarian and vegan cooking. This project aims to make top-tier vegetarian and vegan dishes accessible to both home cooks and professional chefs. The idea for the app emerged from a widespread misconception: vegetarian or vegan meals are bland, unappealing and limited. Just Vega challenges this by presenting a wide variety of gourmet recipes, through a visually appealing and accessible application. \n",
+    "key_features": [
+      "Recipe list with sorting and filters based on ingredients and allergies",
+      "Detailed step-by-step instructions with smart cooking timers",
+      "Ingredient lists and photos",
+      "Seamless, visually engaging UI, based on professional designs"
+    ],
+    "technical_desc": "The application was developed in Android Studio, with Java used for the logic, Firebase as the database and XMl for the layout and UI. \nWe worked witht he SCRUM framework, organizing the project into three sprints, with a string focus on client communication, teamwork and iterative delivery. This included using scrum roles, product backlog, daily stand-ups and weekly sprint reviews with the Product Owners",
+    "task": "Building a prototype for a unique cooking app for vegan and vegetarian recipes. \nLearning goals include the Scrum process, and working with a Product Owner",
+    "language": [
+      "Java",
+      "XML"
+    ],
+    "tools": [
+      "Android Studio",
+      "Firebase",
+      "Scrum"
+    ],
+    "client": "Bach Process Innovations (School Project)",
+    "images": ""
+  },
+  {
+    "id": 2,
+    "title": "Snack Stadium",
+    "year": 2022,
+    "short_desc": "",
+    "description": "",
+    "task": "",
+    "language": [
+      ""
+    ],
+    "tools": [
+      "Angular",
+      "JavaScript",
+      "CI/CD Pipeline",
+      "Gitlab",
+      "Scrum"
+    ],
+    "client": "Personal Project",
+    "images": ""
+  },
+  {
+    "id": 3,
+    "title": "OGSM",
+    "year": 2023,
+    "short_desc": "hihihih",
+    "description": "hihi",
+    "task": "",
+    "language": [
+      ""
+    ],
+    "tools": [
+      "Angular",
+      "JavaScript",
+      "CI/CD Pipeline",
+      "Gitlab",
+      "Scrum"
+    ],
+    "client": "PharmaPartners (School Project)",
+    "images": ""
+  },
+  {
+    "id": 4,
+    "title": "Eneco",
+    "year": 2024,
+    "short_desc": "",
+    "description": "",
+    "task": "",
+    "tools": [
+      "Angular",
+      "JavaScript",
+      "CI/CD Pipeline",
+      "Gitlab",
+      "Scrum"
+    ],
+    "client": "PharmaPartners (School Project)",
+    "images": ""
+  },
+  {
+    "id": 5,
+    "title": "Security Practices",
+    "year": 2025,
+    "short_desc": "",
+    "description": "",
+    "task": "",
+    "language": [
+      ""
+    ],
+    "tools": [
+      "Angular",
+      "JavaScript",
+      "CI/CD Pipeline",
+      "Gitlab",
+      "Scrum"
+    ],
+    "client": "PharmaPartners (School Project)",
+    "images": ""
+  }
+  
+]
