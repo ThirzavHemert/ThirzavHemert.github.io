@@ -24,16 +24,34 @@
 }
 
 .title {
-  font-size: 1.8em;
+  color: #ebebeb;
+  font-size: 2.2em;
+  font-weight: bold;
 }
 
 .descr {
-  font-size: 1.2em;
+  color: #dbd9d9;
+  font-size: 1.5em;
   display: -webkit-box;
   -webkit-line-clamp: 10;
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+.seeMoreBtn {
+  position: fixed;
+  bottom:0;
+  margin-bottom: 10px; 
+}
+
+.seeMoreBtn button {
+  font-size: 1.3em;
+  border: 1px solid #c9c9c9;
+  border-radius: 10px;
+  background:  #011c3b;
+  color:#c9c9c9;
+  padding: 8px;
 }
 
 .con {
