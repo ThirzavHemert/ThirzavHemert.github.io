@@ -3,20 +3,22 @@ import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HomeComponent } from './home/home.component';
-import { LandingPageComponent } from './home/landing-page/landing-page.component';
+import { HomeComponent } from './pages/home/home.component';
+import { LandingPageComponent } from './pages/home/landing-page/landing-page.component';
 import { NavBarComponent } from './shared/nav-bar/nav-bar.component';
-import { ToolingComponent } from './home/tooling/tooling.component';
-import { AboutMeComponent } from './about-me/about-me.component';
+import { ToolingComponent } from './pages/home/tooling/tooling.component';
+import { AboutMeComponent } from './components/about-me/about-me.component';
 import { ExtraOptions, RouterModule, Routes } from '@angular/router';
-import { TimeLineComponent } from './home/time-line/time-line.component';
-import { TimelineProjectComponent } from './home/timeline-project/timeline-project.component';
+import { TimeLineComponent } from './pages/home/time-line/time-line.component';
+import { TimelineProjectComponent } from './pages/home/timeline-project/timeline-project.component';
 import { FooterComponent } from './shared/footer/footer.component';
-import { ProjectDetailComponent } from './project-detail/project-detail.component';
-import { ProjectListComponent } from './project-list/project-list.component';
+import { ProjectDetailComponent } from './pages/project-detail/project-detail.component';
+import { ProjectListComponent } from './pages/project-list/project-list.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { ProjectListItemComponent } from './project-list/project-list-item/project-list-item.component';
+import { ProjectListItemComponent } from './pages/project-list/project-list-item/project-list-item.component';
 import {MatCardModule} from '@angular/material/card';
+import { AboutMePageComponent } from './pages/about-me-page/about-me-page.component';
+import { AboutMeHomeComponent } from './pages/home/about-me-home/about-me-home.component';
 
 const routerOptions: ExtraOptions = {
   anchorScrolling: 'enabled', // Enable scrolling to fragments
@@ -25,7 +27,7 @@ const routerOptions: ExtraOptions = {
 
 const routes: Routes = [
   { path: '', component: HomeComponent, pathMatch: 'full' },
-  { path: 'aboutMe', component: AboutMeComponent },
+  { path: 'aboutMe', component: AboutMePageComponent },
   { path: 'allProjects', component: ProjectListComponent },
   { path: 'projects/:id', component: ProjectDetailComponent },
   { path: '**', redirectTo: '' },
@@ -44,7 +46,9 @@ const routes: Routes = [
     FooterComponent,
     ProjectDetailComponent,
     ProjectListComponent,
-    ProjectListItemComponent
+    ProjectListItemComponent,
+    AboutMePageComponent,
+    AboutMeHomeComponent
   ],
   imports: [
     BrowserModule,

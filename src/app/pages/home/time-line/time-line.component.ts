@@ -1,5 +1,5 @@
 import { AfterViewInit, Component, ElementRef, HostListener, OnInit, QueryList, ViewChild, ViewChildren } from '@angular/core';
-import { Project } from '../../models/project.model';
+import { Project } from '../../../models/project.model';
 import { ProjectService } from 'src/app/project.service';
 
 @Component({
