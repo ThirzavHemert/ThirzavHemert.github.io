@@ -4,20 +4,13 @@
       <h2>{{ project.title }}</h2>
       <br>
       <p>
-        {{ project.description }}
-      </p>
-      <h3>Key Features</h3>
-      <p>
-        {{ project.key_features }}
-      </p>
-      <p>
-        {{ project.technical_desc }}
+        {{ project.short_desc }}
       </p>
 
       <div class="card-bottom">
         <hr>
         <div class="tools">
-          <p *ngFor="let tool of project.language" id="tool">{{ tool }}</p>
+          <p *ngFor="let tool of toolLangList" id="tool">{{ tool }}</p>
         </div>
 
       </div>

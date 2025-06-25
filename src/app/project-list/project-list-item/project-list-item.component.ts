@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { Project } from 'src/app/models/project.model';
 
 @Component({
@@ -6,6 +6,25 @@ import { Project } from 'src/app/models/project.model';
   templateUrl: './project-list-item.component.html',
   styleUrls: ['./project-list-item.component.css']
 })
-export class ProjectListItemComponent {
+export class ProjectListItemComponent implements OnInit {
   @Input() project!: Project;
+  toolLangList: string[] = []
+
+  ngOnInit(): void {
+    this.formatTools()
+  }
+
+  // combine tools and languages to display 3 of them
+  formatTools(): void {
+    this.project.language.forEach(el => {
+      this.toolLangList.push(el)
+    });
+
+    let i = 0
+    while(this.toolLangList.length < 3){
+      console.log("Prioject " + this.project.tools[i])
+      this.toolLangList.push(this.project.tools[i])
+      i++;
+    }  
+  }
 }
