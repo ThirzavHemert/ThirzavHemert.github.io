@@ -10,5 +10,6 @@ export interface Project {
   language: Array<string>;
   tools: Array<string>;
   client: string;
-  images: string;
+  image_head: string,
+  images: Array<string>;
 }

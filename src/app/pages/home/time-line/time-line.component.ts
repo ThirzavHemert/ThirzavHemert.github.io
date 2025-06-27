@@ -62,7 +62,8 @@ export class TimeLineComponent implements OnInit {
           language: [],
           tools: [],
           client: "",
-          images: "",
+          image_head: "",
+          images: [],
         }); // Add a full placeholder project
       }
     }

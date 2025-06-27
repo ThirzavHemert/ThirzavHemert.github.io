@@ -22,7 +22,10 @@
       "Scrum"
     ],
     "client": "PharmaPartners (School Project)",
-    "images": ""
+    "image_head": "",
+    "images": [
+
+    ]
   },
   {
     "id": 1,
@@ -36,7 +39,7 @@
       "Ingredient lists and photos",
       "Seamless, visually engaging UI, based on professional designs"
     ],
-    "technical_desc": "The application was developed in Android Studio, with Java used for the logic, Firebase as the database and XMl for the layout and UI. \nWe worked witht he SCRUM framework, organizing the project into three sprints, with a string focus on client communication, teamwork and iterative delivery. This included using scrum roles, product backlog, daily stand-ups and weekly sprint reviews with the Product Owners",
+    "technical_desc": "The application was developed in Android Studio, with Java used for the logic, Firebase as the database and XMl for the layout and UI. \nWe worked with the SCRUM framework, organizing the project into three sprints, with a strong focus on client communication, teamwork and iterative delivery. This included using scrum roles, product backlog, daily stand-ups and weekly sprint reviews with the Product Owners",
     "task": "Building a prototype for a unique cooking app for vegan and vegetarian recipes. \nLearning goals include the Scrum process, and working with a Product Owner",
     "language": [
       "Java",
@@ -48,7 +51,10 @@
       "Scrum"
     ],
     "client": "Bach Process Innovations (School Project)",
-    "images": ""
+    "image_head": "",
+    "images": [
+
+    ]
   },
   {
     "id": 2,
@@ -68,64 +74,96 @@
       "Scrum"
     ],
     "client": "Personal Project",
-    "images": ""
+    "image_head": "",
+    "images": [
+
+    ]
   },
   {
     "id": 3,
     "title": "OGSM",
     "year": 2023,
-    "short_desc": "hihihih",
-    "description": "hihi",
-    "task": "",
+    "short_desc": "A web-based OGSM (Objectives, Goals, Strategies, Measures) dashboard application build for Centric Gouda. Developed using Angular Typescript and C# .NET, the project involved real client collaboration, development with Scrum and requirement gathering through multiple interviews, and reverse engineering of existing tools provided by the Product Owner",
+    "description": "This OGSM tool is a web application designed to visualize and manage OGSM (Objective, Goal, Startegy, Measure) frameworks. This tool was built as a prototype for Centric. \nOGSM is a widely used strategic planning tool that helps organizations align theur long-term objectives with actionable strategies and measurable outcomes. Originally Centric used various tools, like documents and excel spreadsheets to formulate these OGSMs. Our goal was to make these more usable and efficient through centralizing it in one application.\nThe dashboard includes distinct roles supporting the different user needs within Centric. Regular users can log in to view the OGSMs, while authorized employees such as managers have the ability to add, change and delete objectives, goals, strategies and measures. Also can they assign users to specific measures. \nThe assignment involved not only developing the applicaiton, but also conducting extensive requirements analysis. We achieved this with an initial interview, and subsequent check-ins with the product owner.",
+    "key_features": [
+      "Visualizes the OGSM methodology into a dashboard",
+      "Changes are reflected immediately across the dashboard, ensiring the users always work witht he latest strategic fata",
+      "Role-based access to ensure only authorized users can make edits, while other can only view",
+      "Toggle between view and edit mode for the authorized users",
+      "Users can have their own assigned measures, which they can edit"
+    ],
+    "technical_desc": "The application uses Angular with Typescript for the frontend and C# with .NET for the backend. The team, which consisted of 4 students, followed an agile Scrum approach over multiple sprints, with regular sprint reviews. The deliverables included a working application with CRUD, authorization and authentication, a Requirements Specificaiton document with user stories and wireframes, a technical report with UML diagrams and a test plan with functional and non-functional test cases",
+    "task": "Building a prototype for visualizing the OGSM framework. \n Learning goals include working with a Product Owner, documentation and full-stack web development",
     "language": [
-      ""
+      "TypeScript",
+      "C#"
     ],
     "tools": [
       "Angular",
-      "JavaScript",
-      "CI/CD Pipeline",
-      "Gitlab",
+      ".NET",
       "Scrum"
     ],
-    "client": "PharmaPartners (School Project)",
-    "images": ""
+    "client": "Centric (School Project)",
+    "image_head": "assets/img/projects/ogsm/ogsm_thumbnail.JPG",
+    "images": [
+
+    ]
   },
   {
     "id": 4,
     "title": "Eneco",
     "year": 2024,
-    "short_desc": "",
-    "description": "",
-    "task": "",
-    "tools": [
-      "Angular",
-      "JavaScript",
-      "CI/CD Pipeline",
-      "Gitlab",
-      "Scrum"
+    "short_desc": "The Eneco Building App project aimed to transform Eneco's headquarters environment into a smarter and more sustainable workspace. This application provides a way to reserve worksapces via interactive floorplans. It tracks building usage, which helps optimize resource management like cleaning, heating and lighting, contributing to improved sustainability.",
+    "description": "This Eneco building application provides a way to track specific building usage by it's employees. Currently, they only track badge entries over the whole building, providing limited insight into emplyee location and movement within the office. This application aims to provide better data, in order to optimize resource use such as cleaning, lighting and heating. \nOur goal was to design and develop a web application that allows employees to reserve workspaces dynamically and track building usage. Future plans included to have the app recommend workspaces based on preferences and eco-friendliness. \nBefore starting work on the actual application, we conducted thorough research into different avenues to reach this goal. For example we compared native mobile apps and web apps, ultimately choosing a web-based solution for accessibility and flexibility. Inspried by interactive floorplans like those used by TicketMaster, we implemented SVG-based, clickable floor layouts for users to easily select and reserver available desks and rooms.",
+    "key_features": [
+      "Interactive SVG floorplans to view and select available workspaces",
+      "Supports filtering on the type of workspace the user wants to reserve, including communal areas, and individual and meeting rooms",
+      "Visualization of data on the building occupancy, floor usage and workspace popularity"
     ],
-    "client": "PharmaPartners (School Project)",
-    "images": ""
+    "technical_desc": "The application was built using React for the frontend, and C# .NET for the backend. The team originally consisted of 5 students, which near the end was cut down to 2 students. The first half of the project consisted heavily of research, in which we came up with a solution based on the case provided to us, requirement interviews with the product owner, and research into different avenues to realize our solution. The latter half was the actual development of the application. The end deliverables included a working prototype, Evidence-Practical-Report, Technical Report and a Test Report.",
+    "task": "Formulate a solution based on a provided casus, research different implementations, and building a working prototype. \nLearnign goals include research and documentation",
+    "language": [
+      "Typescript",
+      "C#"
+    ],
+    "tools": [
+      "React",
+      ".NET",
+      "SVG"
+    ],
+    "client": "Eneco (School Project)",
+    "image_head": "",
+    "images": [
+
+    ]
   },
   {
     "id": 5,
     "title": "Security Practices",
     "year": 2025,
-    "short_desc": "",
-    "description": "",
-    "task": "",
+    "short_desc": "A secure console-based Python backend for managing shared electric scooters in Rotterdam, with role-based access, encrypted data storage, and comprehensive user, traveller, and scooter management functionality. Built using Python, and libraies such as Regular Expression for input validation, and cryptography for the encryption and decryption of data.",
+    "description": "Urban Mobility Backend System is a console-based backend application developed in Python 3 using SQLite3, designed to manage and secure the operations of a shared electric scooter fleet in the Rotterdam region. The system emphasizes software security and was created as part of a software quality course, focusing on input validation, SQL injection prevention, password hashing and cryptographic data protection. \nIt features a role-based access control system with three hierarchical user roles: Super Administrator, System Administrator and Service Engineer, each with specific privileges to manage traveller and scooter information and other roles. \nWhen the user wants to perform any action on the database, the application uses token authentication that are allocated on successful login. Upon an attempt to query the database, the application checks if the token matches the logged in user and if the token has not been timed out. \nThe application has comprehensive logging of system activity, flagging suspicious behavior such as attempting to log in more than 3 times. Additionally the application provides a feature to backup and restore the database, storing it in ZIP-files",
+    "key_features":[
+      "User authentication with hashed passwords",
+      "User authorization through token usage on database actions",
+      "Encrypted storgae of data",
+      "Scooter, traveller and user management with CRUD, based on user-permissions",
+      "Comprehensive logging of system activity, flagging suspicious activity"
+    ],
+    "technical_desc": "The application was built using Python, SQLite3 and cryptography. The minimal frontend is in the form of a console app, with basic menu items the user can select using numbers. Documentation includes user stories, UML Class Diagram, and folder structure diagram. Important aspects of this application are the security features, such as tokens, cryptography, whitelisting of input validation and SQL injection prevention.",
+    "task": "Implement a secure console-based Python backend system. \nLearning goal is implementing security measures in applications",
     "language": [
-      ""
+      "Python"
     ],
     "tools": [
-      "Angular",
-      "JavaScript",
-      "CI/CD Pipeline",
-      "Gitlab",
-      "Scrum"
+      "Cryptography",
+      "Security measures"
     ],
-    "client": "PharmaPartners (School Project)",
-    "images": ""
+    "client": "School Course Software Quality & Security",
+    "image_head": "",
+    "images": [
+
+    ]
   }
   
 ]
