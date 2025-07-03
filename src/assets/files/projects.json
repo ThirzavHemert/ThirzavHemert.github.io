@@ -60,18 +60,23 @@
     "id": 2,
     "title": "Snack Stadium",
     "year": 2022,
-    "short_desc": "",
-    "description": "",
-    "task": "",
+    "short_desc": "A custom Android app that streams real-time football scoreboards and match statistics to a Raspberry Pi-powered snack staduim, turning every match day into an immersive, interactive experience",
+    "description": "SnackStadium is a personal project created to enhance match0day experiences in a playful and social way. The physical SnackStadium is a custom-built stadium model with snack compartments and a Raspberry Pi that acts as a live scoreboard screen. \nThe app allows the user to select the type od sport (currently supporting football), then choose a league and browse scheduled matches for the day. Each match item shows live data, including kickoff time, current game minute, teams, and score. Once a match is selected, a detailed scoreboard view is shown, featuring team logos, scores, match time, stadium name and referee details. \n The user can also dive into a dedicated statistics screen, which displays detailed live stats like shots in goal, ball possession, and more, visualized with dynamic horizontal bars: green for leading, red for trailing and yellow for equal values. The result is a fun, engaging, and fully custom match viewing companion app.",
+    "key_features":[
+      "Select sport type, league and match from real-time schedule",
+      "Live scoreboard view with team logos, scores and match detials",
+      "Interactive statistics screen with dynamic visual bar graphs",
+      "Automatic live updates every 5 seconds for the scoreboard"
+    ],
+    "technical_desc":"The application is built in Android Studio using Java and XML for UI design. Match data is fetched via the API-Football API, while live scores and minute-by-minute updates are retrieved using web scraping from SofaScore. Data is updates every 5 seconds when viewing a live scoreboard.",
+    "task": "Building a scoreboard app that streams real-time sports match details. \n Learning goals include Android development and web scraping",
     "language": [
-      ""
+      "Java",
+      "XML"
     ],
     "tools": [
-      "Angular",
-      "JavaScript",
-      "CI/CD Pipeline",
-      "Gitlab",
-      "Scrum"
+      "Web Scraping",
+      "Android Studio"
     ],
     "client": "Personal Project",
     "image_head": "",
@@ -83,7 +88,7 @@
     "id": 3,
     "title": "OGSM",
     "year": 2023,
-    "short_desc": "A web-based OGSM (Objectives, Goals, Strategies, Measures) dashboard application build for Centric Gouda. Developed using Angular Typescript and C# .NET, the project involved real client collaboration, development with Scrum and requirement gathering through multiple interviews, and reverse engineering of existing tools provided by the Product Owner",
+    "short_desc": "A web-based OGSM (Objectives, Goals, Strategies, Measures) dashboard application build for Centric Gouda. Developed using Angular Typescript and C# .NET, the project involved real client collaboration, requirement gathering through multiple interviews, and reverse engineering of existing tools provided by the Product Owner",
     "description": "This OGSM tool is a web application designed to visualize and manage OGSM (Objective, Goal, Startegy, Measure) frameworks. This tool was built as a prototype for Centric. \nOGSM is a widely used strategic planning tool that helps organizations align theur long-term objectives with actionable strategies and measurable outcomes. Originally Centric used various tools, like documents and excel spreadsheets to formulate these OGSMs. Our goal was to make these more usable and efficient through centralizing it in one application.\nThe dashboard includes distinct roles supporting the different user needs within Centric. Regular users can log in to view the OGSMs, while authorized employees such as managers have the ability to add, change and delete objectives, goals, strategies and measures. Also can they assign users to specific measures. \nThe assignment involved not only developing the applicaiton, but also conducting extensive requirements analysis. We achieved this with an initial interview, and subsequent check-ins with the product owner.",
     "key_features": [
       "Visualizes the OGSM methodology into a dashboard",
