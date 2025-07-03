@@ -17,6 +17,24 @@
     object-fit: cover;
   }
 
+  .project-image-div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 40%;
+    border-radius: 15px;
+    border: green solid 1px;
+    box-shadow: 0 0 5px 5px #09D009;
+  }
+  
+  .image-project {
+    max-width: 100%;
+    height: 100%;
+    border-radius: 15px;
+  }
+
+
   .project-title {
     position: absolute;
     top: 33%;
@@ -63,23 +81,7 @@
     background-image: linear-gradient(#129110, #001021);
   }
   
-  .project-image-div {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 40%;
-    height: 40%;
-    border-radius: 15px;
-    border: green solid 1px;
-    box-shadow: 0 0 5px 5px #09D009;
-  }
   
-  .image-project {
-    max-width: 100%;
-    height: 100%;
-    border-radius: 15px;
-  }
 
   .content {
     width: 75%;

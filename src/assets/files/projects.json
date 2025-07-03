@@ -79,15 +79,15 @@
       "Android Studio"
     ],
     "client": "Personal Project",
-    "image_head": "assets/img/projects/snackstadium/scoreboard.png",
-    "image_thumbnail": "assets/img/projects/snackstadium/thumbnail.JPG",
+    "image_head": "assets/img/projects/snackstadium/scoreboard.PNG",
+    "image_thumbnail": "assets/img/projects/snackstadium/thumbnail.jpg",
     "images": [
-      "assets/img/projects/snackstadium/league.png",
-      "assets/img/projects/snackstadium/matchOverview.png",
-      "assets/img/projects/snackstadium/scoreboard.png",
-      "assets/img/projects/snackstadium/stats.png",
-      "assets/img/projects/snackstadium/scoreboardIRL.png",
-      "assets/img/projects/snackstadium/snackstadiumIRL.png"
+      "assets/img/projects/snackstadium/league.PNG",
+      "assets/img/projects/snackstadium/matchOverview.PNG",
+      "assets/img/projects/snackstadium/scoreboardIRL.jpg",
+      "assets/img/projects/snackstadium/scoreboard.PNG",
+      "assets/img/projects/snackstadium/stats.PNG",
+      "assets/img/projects/snackstadium/snackstadiumIRL.jpg"
     ]
   },
   {
@@ -115,10 +115,15 @@
       "Scrum"
     ],
     "client": "Centric (School Project)",
-    "image_head": "",
+    "image_head": "assets/img/projects/ogsm/ogsm_dash_2.JPG",
     "image_thumbnail": "assets/img/projects/ogsm/ogsm_thumbnail.JPG",
     "images": [
-
+      "assets/img/projects/ogsm/login.JPG",
+      "assets/img/projects/ogsm/ogsm_dash_1.JPG",
+      "assets/img/projects/ogsm/ogsm_dash_2.JPG",
+      "assets/img/projects/ogsm/ogsm_dash_edit.JPG",
+      "assets/img/projects/ogsm/ogsm_dash_sidenav.JPG",
+      "assets/img/projects/ogsm/ogsm_overview.JPG"
     ]
   },
   {

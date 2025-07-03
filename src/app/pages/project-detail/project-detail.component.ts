@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Route, Router } from '@angular/router';
+import { Project } from 'src/app/models/project.model';
 
 @Component({
   selector: 'app-project-detail',
@@ -7,22 +9,24 @@ import { Component } from '@angular/core';
 })
 export class ProjectDetailComponent {
 
-  imageUrls: string[] = [
-    'https://picsum.photos/300/200',
-    'https://picsum.photos/400/250',
-    'https://picsum.photos/350/250',
-    'https://picsum.photos/300/400',
-    'https://picsum.photos/340/230',
-    'https://picsum.photos/360/260',
-    'https://picsum.photos/370/280',
-    'https://picsum.photos/390/310'
-  ];
+  project!: Project;
 
   columns: string[][] = [];
+  imageUrls: string[] = [];
+  formatDescr!: string;
   currentFlex: string = '25%'; // Default: 4 columns
 
+  constructor(private router: Router){
+    const nav = this.router.getCurrentNavigation();
+    this.project = nav?.extras?.state?.['project'];
+    console.log(this.project)
+  }
+
+
   ngOnInit() {
+    this.imageUrls = this.project.images
     this.splitIntoColumns(4); // initial column layout
+    this.formatDescr = this.project.description.replace(/\n/g, '<br><br>');
   }
 
   splitIntoColumns(columnCount: number) {
