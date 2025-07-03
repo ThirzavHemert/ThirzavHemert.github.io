@@ -11,5 +11,6 @@ export interface Project {
   tools: Array<string>;
   client: string;
   image_head: string,
+  image_thumbnail: string,
   images: Array<string>;
 }

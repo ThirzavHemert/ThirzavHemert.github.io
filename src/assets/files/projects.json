@@ -79,9 +79,15 @@
       "Android Studio"
     ],
     "client": "Personal Project",
-    "image_head": "",
+    "image_head": "assets/img/projects/snackstadium/scoreboard.png",
+    "image_thumbnail": "assets/img/projects/snackstadium/thumbnail.JPG",
     "images": [
-
+      "assets/img/projects/snackstadium/league.png",
+      "assets/img/projects/snackstadium/matchOverview.png",
+      "assets/img/projects/snackstadium/scoreboard.png",
+      "assets/img/projects/snackstadium/stats.png",
+      "assets/img/projects/snackstadium/scoreboardIRL.png",
+      "assets/img/projects/snackstadium/snackstadiumIRL.png"
     ]
   },
   {
@@ -109,7 +115,8 @@
       "Scrum"
     ],
     "client": "Centric (School Project)",
-    "image_head": "assets/img/projects/ogsm/ogsm_thumbnail.JPG",
+    "image_head": "",
+    "image_thumbnail": "assets/img/projects/ogsm/ogsm_thumbnail.JPG",
     "images": [
 
     ]
@@ -137,7 +144,8 @@
       "SVG"
     ],
     "client": "Eneco (School Project)",
-    "image_head": "assets/img/projects/eneco/thumbnail.PNG",
+    "image_head": "",
+    "image_thumbnail": "assets/img/projects/eneco/thumbnail.PNG",
     "images": [
       "assets/img/projects/eneco/login.PNG",
       "assets/img/projects/eneco/select.PNG",
@@ -169,7 +177,8 @@
       "Security measures"
     ],
     "client": "School Course Software Quality & Security",
-    "image_head": "assets/img/projects/security/thumbnail.JPG",
+    "image_head": "",
+    "image_thumbnail": "assets/img/projects/security/thumbnail.JPG",
     "images": [
 
     ]
