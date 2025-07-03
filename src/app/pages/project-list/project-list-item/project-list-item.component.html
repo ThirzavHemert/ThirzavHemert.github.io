@@ -1,4 +1,4 @@
-<div class="project-item">
+<div (click)="goToProject(project)" class="project-item">
   <div class="item-content">
     <div class="card-text">
       <h2>{{ project.title }}</h2>
@@ -19,7 +19,6 @@
 
     <div class="card-image">
       <img [src]="project.image_thumbnail" class="image-project" alt="{{ project.title }} image">
-      <!-- <img [src]="project.images" class="image-project"> -->
     </div>
   </div>
 </div>

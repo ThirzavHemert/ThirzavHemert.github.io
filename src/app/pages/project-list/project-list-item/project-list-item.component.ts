@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { Project } from 'src/app/models/project.model';
 
 @Component({
@@ -13,6 +14,13 @@ export class ProjectListItemComponent implements OnInit {
   ngOnInit(): void {
     this.formatTools()
   }
+
+  constructor(private router : Router){}
+  
+    goToProject(project: Project){
+      this.router.navigate(['/projects', project.id], {state: {project}})
+    }
+  
 
   // combine tools and languages to display 3 of them
   formatTools(): void {

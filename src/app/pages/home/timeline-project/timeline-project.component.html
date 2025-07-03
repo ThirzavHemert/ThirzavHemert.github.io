@@ -1,4 +1,3 @@
-<!-- <div [routerLink]="['/projects', project.id]" [routerLinkActive]="['link-active']" [routerLinkActiveOptions]="{ exact: true }" [ngClass]="{ 'con0': index === 0, 'con': index !== 0 }" class="project-block"> -->
 <div (click)="goToProject(project)" [ngClass]="{ 'con0': index === 0, 'con': index !== 0 }" class="project-block">
   <div class="project-content">
     <p class="title"> {{ project.title }}</p>
