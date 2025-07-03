@@ -137,9 +137,13 @@
       "SVG"
     ],
     "client": "Eneco (School Project)",
-    "image_head": "",
+    "image_head": "assets/img/projects/eneco/thumbnail.PNG",
     "images": [
-
+      "assets/img/projects/eneco/login.PNG",
+      "assets/img/projects/eneco/select.PNG",
+      "assets/img/projects/eneco/floorSelect.PNG",
+      "assets/img/projects/eneco/roomSelect.PNG",
+      "assets/img/projects/eneco/dataOverview.PNG"
     ]
   },
   {
@@ -165,7 +169,7 @@
       "Security measures"
     ],
     "client": "School Course Software Quality & Security",
-    "image_head": "",
+    "image_head": "assets/img/projects/security/thumbnail.JPG",
     "images": [
 
     ]
