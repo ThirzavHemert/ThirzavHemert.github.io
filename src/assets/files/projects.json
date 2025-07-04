@@ -51,9 +51,18 @@
       "Scrum"
     ],
     "client": "Bach Process Innovations (School Project)",
-    "image_head": "",
+    "image_head": "assets/img/projects/justvega/header.PNG",
+    "image_thumbnail": "assets/img/projects/justvega/thumbnail.PNG",
     "images": [
-
+      "assets/img/projects/justvega/login.PNG",
+      "assets/img/projects/justvega/welcome.PNG",
+      "assets/img/projects/justvega/recipeList.PNG",
+      "assets/img/projects/justvega/filter.PNG",
+      "assets/img/projects/justvega/search.PNG",
+      "assets/img/projects/justvega/searchIngredient.PNG",
+      "assets/img/projects/justvega/recipeDetail.PNG",
+      "assets/img/projects/justvega/register.PNG",
+      "assets/img/projects/justvega/profile.PNG"
     ]
   },
   {
