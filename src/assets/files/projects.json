@@ -17,13 +17,24 @@
     ],
     "tools": [
       "Angular",
-      "CI/CD Pipeline",
+      "MongoDB",
       "Gitlab",
       "Scrum"
     ],
     "client": "PharmaPartners (School Project)",
-    "image_head": "",
+    "image_head": "assets/img/projects/pharmapartners/header.PNG",
+    "image_thumbnail": "assets/img/projects/pharmapartners/thumbnail.PNG",
     "images": [
+      "assets/img/projects/pharmapartners/login.PNG",
+      "assets/img/projects/pharmapartners/register.PNG",
+      "assets/img/projects/pharmapartners/2factor.PNG",
+      "assets/img/projects/pharmapartners/calendar.PNG",
+      "assets/img/projects/pharmapartners/calendar2.PNG",
+      "assets/img/projects/pharmapartners/schedule.PNG",
+      "assets/img/projects/pharmapartners/episode.PNG",
+      "assets/img/projects/pharmapartners/add.PNG",
+      "assets/img/projects/pharmapartners/dropdown.PNG",
+      "assets/img/projects/pharmapartners/card.PNG"
 
     ]
   },
