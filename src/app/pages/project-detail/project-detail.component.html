@@ -65,6 +65,17 @@
         <h2> Project Overview</h2>
 
         <p [innerHTML]="formatDescr"> {{ project.description }}</p>
+
+        <br>
+
+        <h3> Key Features </h3>
+        <li *ngFor="let feat of project.key_features">
+          {{ feat }}
+        </li>
+
+        <br>
+
+        <p> {{ project.technical_desc }} </p>
       </div>
 
       <br>
