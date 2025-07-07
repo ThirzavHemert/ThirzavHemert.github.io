@@ -1,0 +1,212 @@
+[
+  {
+    "id": 0,
+    "title": "PharmaPartners",
+    "year": 2020,
+    "short_desc": "A mobile solution for general practitioners to streamline home visit consultations through digitization. Built using AngularJS and JavaScript, this tool reduces the workload on an administrative level and encourages more time with the patient, and thus better patient care",
+    "description": "PharmaPartners is a Dutch healthcare IT company dedicated to improving the accessibility and quality of healthcare. This project aims to address the increasing workload of general practitioners, who are dealing with rising patient demands and a shortage of staff. \nThe goal of this project was to develop a solution that provides the GPs with real-time access to patient data during home visits. Traditionally, GPs write out a physical form with the necessary information. This application replaces that process with a digital interface, enabling Gps to use and update the information directly. This leads to less administrative workload, more focus on the patient, and thus better healthcare.",
+    "key_features": [
+      "A digital version of the visit form with a daily patient overview",
+      "Access to the patient file such as episode lists, journal entrie, medication overview and diagnostics",
+      "Secure logging features"
+    ],
+    "technical_desc": "The front end was developed in AngularJS and the back end in JavaScript using a controller-model structure. As this project is meant as a prototype for the company, integration with the full Medicom system was not possible due to privacy and access restrictions.",
+    "task": "Building a prototype for digitizing and streamlining home visit consultations. \nLearning goals include working with a Product Owner and web development",
+    "language": [
+      "JavaScript"
+    ],
+    "tools": [
+      "Angular",
+      "MongoDB",
+      "Gitlab",
+      "Scrum"
+    ],
+    "client": "PharmaPartners (School Project)",
+    "image_head": "assets/img/projects/pharmapartners/header.PNG",
+    "image_thumbnail": "assets/img/projects/pharmapartners/thumbnail.PNG",
+    "images": [
+      "assets/img/projects/pharmapartners/login.PNG",
+      "assets/img/projects/pharmapartners/register.PNG",
+      "assets/img/projects/pharmapartners/2factor.PNG",
+      "assets/img/projects/pharmapartners/calendar.PNG",
+      "assets/img/projects/pharmapartners/calendar2.PNG",
+      "assets/img/projects/pharmapartners/schedule.PNG",
+      "assets/img/projects/pharmapartners/episode.PNG",
+      "assets/img/projects/pharmapartners/add.PNG",
+      "assets/img/projects/pharmapartners/dropdown.PNG",
+      "assets/img/projects/pharmapartners/card.PNG"
+
+    ]
+  },
+  {
+    "id": 1,
+    "title": "Just Vega",
+    "year": 2020,
+    "short_desc": "A high-end culinary Android app focused on vegetarian and vegan cooking. Built using Android Studio, Java and Firebase, this project brings restaurant-level reciped to home chefs, with a string emphasis on usability and design.",
+    "description": "Just Vega is a culinary platform designed to revolutionize how people perceive and experience vegetarian and vegan cooking. This project aims to make top-tier vegetarian and vegan dishes accessible to both home cooks and professional chefs. The idea for the app emerged from a widespread misconception: vegetarian or vegan meals are bland, unappealing and limited. Just Vega challenges this by presenting a wide variety of gourmet recipes, through a visually appealing and accessible application. \n",
+    "key_features": [
+      "Recipe list with sorting and filters based on ingredients and allergies",
+      "Detailed step-by-step instructions with smart cooking timers",
+      "Ingredient lists and photos",
+      "Seamless, visually engaging UI, based on professional designs"
+    ],
+    "technical_desc": "The application was developed in Android Studio, with Java used for the logic, Firebase as the database and XMl for the layout and UI. \nWe worked with the SCRUM framework, organizing the project into three sprints, with a strong focus on client communication, teamwork and iterative delivery. This included using scrum roles, product backlog, daily stand-ups and weekly sprint reviews with the Product Owners",
+    "task": "Building a prototype for a unique cooking app for vegan and vegetarian recipes. \nLearning goals include the Scrum process, and working with a Product Owner",
+    "language": [
+      "Java",
+      "XML"
+    ],
+    "tools": [
+      "Android Studio",
+      "Firebase",
+      "Scrum"
+    ],
+    "client": "Bach Process Innovations (School Project)",
+    "image_head": "assets/img/projects/justvega/header.PNG",
+    "image_thumbnail": "assets/img/projects/justvega/thumbnail.PNG",
+    "images": [
+      "assets/img/projects/justvega/login.PNG",
+      "assets/img/projects/justvega/welcome.PNG",
+      "assets/img/projects/justvega/recipeList.PNG",
+      "assets/img/projects/justvega/filter.PNG",
+      "assets/img/projects/justvega/search.PNG",
+      "assets/img/projects/justvega/searchIngredient.PNG",
+      "assets/img/projects/justvega/recipeDetail.PNG",
+      "assets/img/projects/justvega/register.PNG",
+      "assets/img/projects/justvega/profile.PNG"
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Snack Stadium",
+    "year": 2022,
+    "short_desc": "A custom Android app that streams real-time football scoreboards and match statistics to a Raspberry Pi-powered snack staduim, turning every match day into an immersive, interactive experience",
+    "description": "SnackStadium is a personal project created to enhance match0day experiences in a playful and social way. The physical SnackStadium is a custom-built stadium model with snack compartments and a Raspberry Pi that acts as a live scoreboard screen. \nThe app allows the user to select the type od sport (currently supporting football), then choose a league and browse scheduled matches for the day. Each match item shows live data, including kickoff time, current game minute, teams, and score. Once a match is selected, a detailed scoreboard view is shown, featuring team logos, scores, match time, stadium name and referee details. \n The user can also dive into a dedicated statistics screen, which displays detailed live stats like shots in goal, ball possession, and more, visualized with dynamic horizontal bars: green for leading, red for trailing and yellow for equal values. The result is a fun, engaging, and fully custom match viewing companion app.",
+    "key_features":[
+      "Select sport type, league and match from real-time schedule",
+      "Live scoreboard view with team logos, scores and match detials",
+      "Interactive statistics screen with dynamic visual bar graphs",
+      "Automatic live updates every 5 seconds for the scoreboard"
+    ],
+    "technical_desc":"The application is built in Android Studio using Java and XML for UI design. Match data is fetched via the API-Football API, while live scores and minute-by-minute updates are retrieved using web scraping from SofaScore. Data is updates every 5 seconds when viewing a live scoreboard.",
+    "task": "Building a scoreboard app that streams real-time sports match details. \n Learning goals include Android development and web scraping",
+    "language": [
+      "Java",
+      "XML"
+    ],
+    "tools": [
+      "Web Scraping",
+      "Android Studio"
+    ],
+    "client": "Personal Project",
+    "image_head": "assets/img/projects/snackstadium/scoreboard.PNG",
+    "image_thumbnail": "assets/img/projects/snackstadium/thumbnail.jpg",
+    "images": [
+      "assets/img/projects/snackstadium/league.PNG",
+      "assets/img/projects/snackstadium/matchOverview.PNG",
+      "assets/img/projects/snackstadium/scoreboardIRL.jpg",
+      "assets/img/projects/snackstadium/scoreboard.PNG",
+      "assets/img/projects/snackstadium/stats.PNG",
+      "assets/img/projects/snackstadium/snackstadiumIRL.jpg"
+    ]
+  },
+  {
+    "id": 3,
+    "title": "OGSM",
+    "year": 2023,
+    "short_desc": "A web-based OGSM (Objectives, Goals, Strategies, Measures) dashboard application build for Centric Gouda. Developed using Angular Typescript and C# .NET, the project involved real client collaboration, requirement gathering through multiple interviews, and reverse engineering of existing tools provided by the Product Owner",
+    "description": "This OGSM tool is a web application designed to visualize and manage OGSM (Objective, Goal, Startegy, Measure) frameworks. This tool was built as a prototype for Centric. \nOGSM is a widely used strategic planning tool that helps organizations align theur long-term objectives with actionable strategies and measurable outcomes. Originally Centric used various tools, like documents and excel spreadsheets to formulate these OGSMs. Our goal was to make these more usable and efficient through centralizing it in one application.\nThe dashboard includes distinct roles supporting the different user needs within Centric. Regular users can log in to view the OGSMs, while authorized employees such as managers have the ability to add, change and delete objectives, goals, strategies and measures. Also can they assign users to specific measures. \nThe assignment involved not only developing the applicaiton, but also conducting extensive requirements analysis. We achieved this with an initial interview, and subsequent check-ins with the product owner.",
+    "key_features": [
+      "Visualizes the OGSM methodology into a dashboard",
+      "Changes are reflected immediately across the dashboard, ensiring the users always work witht he latest strategic fata",
+      "Role-based access to ensure only authorized users can make edits, while other can only view",
+      "Toggle between view and edit mode for the authorized users",
+      "Users can have their own assigned measures, which they can edit"
+    ],
+    "technical_desc": "The application uses Angular with Typescript for the frontend and C# with .NET for the backend. The team, which consisted of 4 students, followed an agile Scrum approach over multiple sprints, with regular sprint reviews. The deliverables included a working application with CRUD, authorization and authentication, a Requirements Specificaiton document with user stories and wireframes, a technical report with UML diagrams and a test plan with functional and non-functional test cases",
+    "task": "Building a prototype for visualizing the OGSM framework. \n Learning goals include working with a Product Owner, documentation and full-stack web development",
+    "language": [
+      "TypeScript",
+      "C#"
+    ],
+    "tools": [
+      "Angular",
+      ".NET",
+      "Scrum"
+    ],
+    "client": "Centric (School Project)",
+    "image_head": "assets/img/projects/ogsm/ogsm_dash_2.JPG",
+    "image_thumbnail": "assets/img/projects/ogsm/ogsm_thumbnail.JPG",
+    "images": [
+      "assets/img/projects/ogsm/login.JPG",
+      "assets/img/projects/ogsm/ogsm_dash_1.JPG",
+      "assets/img/projects/ogsm/ogsm_dash_2.JPG",
+      "assets/img/projects/ogsm/ogsm_dash_edit.JPG",
+      "assets/img/projects/ogsm/ogsm_dash_sidenav.JPG",
+      "assets/img/projects/ogsm/ogsm_overview.JPG"
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Eneco",
+    "year": 2024,
+    "short_desc": "The Eneco Building App project aimed to transform Eneco's headquarters environment into a smarter and more sustainable workspace. This application provides a way to reserve worksapces via interactive floorplans. It tracks building usage, which helps optimize resource management like cleaning, heating and lighting, contributing to improved sustainability.",
+    "description": "This Eneco building application provides a way to track specific building usage by it's employees. Currently, they only track badge entries over the whole building, providing limited insight into emplyee location and movement within the office. This application aims to provide better data, in order to optimize resource use such as cleaning, lighting and heating. \nOur goal was to design and develop a web application that allows employees to reserve workspaces dynamically and track building usage. Future plans included to have the app recommend workspaces based on preferences and eco-friendliness. \nBefore starting work on the actual application, we conducted thorough research into different avenues to reach this goal. For example we compared native mobile apps and web apps, ultimately choosing a web-based solution for accessibility and flexibility. Inspried by interactive floorplans like those used by TicketMaster, we implemented SVG-based, clickable floor layouts for users to easily select and reserver available desks and rooms.",
+    "key_features": [
+      "Interactive SVG floorplans to view and select available workspaces",
+      "Supports filtering on the type of workspace the user wants to reserve, including communal areas, and individual and meeting rooms",
+      "Visualization of data on the building occupancy, floor usage and workspace popularity"
+    ],
+    "technical_desc": "The application was built using React for the frontend, and C# .NET for the backend. The team originally consisted of 5 students, which near the end was cut down to 2 students. The first half of the project consisted heavily of research, in which we came up with a solution based on the case provided to us, requirement interviews with the product owner, and research into different avenues to realize our solution. The latter half was the actual development of the application. The end deliverables included a working prototype, Evidence-Practical-Report, Technical Report and a Test Report.",
+    "task": "Formulate a solution based on a provided casus, research different implementations, and building a working prototype. \nLearnign goals include research and documentation",
+    "language": [
+      "Typescript",
+      "C#"
+    ],
+    "tools": [
+      "React",
+      ".NET",
+      "SVG"
+    ],
+    "client": "Eneco (School Project)",
+    "image_head": "",
+    "image_thumbnail": "assets/img/projects/eneco/thumbnail.PNG",
+    "images": [
+      "assets/img/projects/eneco/login.PNG",
+      "assets/img/projects/eneco/select.PNG",
+      "assets/img/projects/eneco/floorSelect.PNG",
+      "assets/img/projects/eneco/roomSelect.PNG",
+      "assets/img/projects/eneco/dataOverview.PNG"
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Security Practices",
+    "year": 2025,
+    "short_desc": "A secure console-based Python backend for managing shared electric scooters in Rotterdam, with role-based access, encrypted data storage, and comprehensive user, traveller, and scooter management functionality. Built using Python, and libraies such as Regular Expression for input validation, and cryptography for the encryption and decryption of data.",
+    "description": "Urban Mobility Backend System is a console-based backend application developed in Python 3 using SQLite3, designed to manage and secure the operations of a shared electric scooter fleet in the Rotterdam region. The system emphasizes software security and was created as part of a software quality course, focusing on input validation, SQL injection prevention, password hashing and cryptographic data protection. \nIt features a role-based access control system with three hierarchical user roles: Super Administrator, System Administrator and Service Engineer, each with specific privileges to manage traveller and scooter information and other roles. \nWhen the user wants to perform any action on the database, the application uses token authentication that are allocated on successful login. Upon an attempt to query the database, the application checks if the token matches the logged in user and if the token has not been timed out. \nThe application has comprehensive logging of system activity, flagging suspicious behavior such as attempting to log in more than 3 times. Additionally the application provides a feature to backup and restore the database, storing it in ZIP-files",
+    "key_features":[
+      "User authentication with hashed passwords",
+      "User authorization through token usage on database actions",
+      "Encrypted storgae of data",
+      "Scooter, traveller and user management with CRUD, based on user-permissions",
+      "Comprehensive logging of system activity, flagging suspicious activity"
+    ],
+    "technical_desc": "The application was built using Python, SQLite3 and cryptography. The minimal frontend is in the form of a console app, with basic menu items the user can select using numbers. Documentation includes user stories, UML Class Diagram, and folder structure diagram. Important aspects of this application are the security features, such as tokens, cryptography, whitelisting of input validation and SQL injection prevention.",
+    "task": "Implement a secure console-based Python backend system. \nLearning goal is implementing security measures in applications",
+    "language": [
+      "Python"
+    ],
+    "tools": [
+      "Cryptography",
+      "Security measures"
+    ],
+    "client": "School Course Software Quality & Security",
+    "image_head": "",
+    "image_thumbnail": "assets/img/projects/security/thumbnail.JPG",
+    "images": [
+
+    ]
+  }
+  
+]
