@@ -7,15 +7,15 @@ import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
   styleUrls: ['./tooling.component.css']
 })
 export class ToolingComponent {
-  languages: { name: string; experience: string; svg: SafeHtml }[];
-  tooling: { name: string; experience: string; svg: SafeHtml }[];
+  languages: { name: string; level: number; svg: SafeHtml }[];
+  tooling: { name: string; level: number; svg: SafeHtml }[];
 
   constructor(private sanitizer: DomSanitizer) {
   
     this.languages = [
       {
         name: 'C#',
-        experience: '2 Years',
+        level: 3.5,
         svg: this.sanitizer.bypassSecurityTrustHtml(`<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="25" height="25" viewBox="0,0,256,256">
                 <g fill="#0cc50c" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" 
                 stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal">
@@ -27,7 +27,7 @@ export class ToolingComponent {
       },
       {
         name: 'Java',
-        experience: '2 Years',
+        level: 4,
         svg: this.sanitizer.bypassSecurityTrustHtml(`<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0,0,256,256">
                   <g fill="#0cc50c" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" 
                   stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal">
@@ -39,7 +39,7 @@ export class ToolingComponent {
       },
       {
         name: 'Kotlin',
-        experience: '2 Years',
+        level: 2,
         svg: this.sanitizer.bypassSecurityTrustHtml(`<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="25" height="25" viewBox="0,0,256,256">
                 <g fill="#0cc50c" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" 
                 stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal">
@@ -51,7 +51,7 @@ export class ToolingComponent {
       },
       {
         name: 'Javascript',
-        experience: '2 Years',
+        level: 2,
         svg: this.sanitizer.bypassSecurityTrustHtml(`<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="25" height="25" viewBox="0,0,256,256">
                 <g fill="#0cc50c" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" 
                 stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal">
@@ -63,7 +63,7 @@ export class ToolingComponent {
       },
       {
         name: 'Typescript',
-        experience: '2 Years',
+        level: 2,
         svg: this.sanitizer.bypassSecurityTrustHtml(`<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="25" height="25" viewBox="0,0,256,256">
                 <g fill="#0cc50c" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" 
                 stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal">
@@ -75,7 +75,7 @@ export class ToolingComponent {
       },
       {
         name: 'Python',
-        experience: '2 Years',
+        level: 1.5,
         svg: this.sanitizer.bypassSecurityTrustHtml(`<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="25" height="25" viewBox="0,0,256,256">
                 <g fill="#0cc50c" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" 
                 stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal">
@@ -90,7 +90,7 @@ export class ToolingComponent {
     this.tooling = [
       {
         name: 'Angular',
-        experience: '2 Years',
+        level: 4,
         svg: this.sanitizer.bypassSecurityTrustHtml(`<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="25" height="25" viewBox="0,0,256,256">
                 <g fill="#0cc50c" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" 
                 stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal">
@@ -102,7 +102,7 @@ export class ToolingComponent {
       },
       {
         name: 'React',
-        experience: '2 Years',
+        level: 2,
         svg: this.sanitizer.bypassSecurityTrustHtml(`<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="25" height="25" viewBox="0,0,256,256">
                 <g fill="#0cc50c" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" 
                 stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal">
@@ -114,7 +114,7 @@ export class ToolingComponent {
       },
       {
         name: 'Webscraping',
-        experience: '2 Years',
+        level: 1,
         svg: this.sanitizer.bypassSecurityTrustHtml(`<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="25" height="25" viewBox="0,0,256,256">
                 <g fill="#0cc50c" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" 
                 stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal">
@@ -126,12 +126,12 @@ export class ToolingComponent {
       },
       {
         name: 'SQL',
-        experience: '2 Years',
+        level: 4.5,
         svg: this.sanitizer.bypassSecurityTrustHtml(``)
       },
       {
         name: 'MongoDB',
-        experience: '2 Years',
+        level: 1,
         svg: this.sanitizer.bypassSecurityTrustHtml(`<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0,0,256,256">
                 <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" 
                 stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal">
@@ -143,7 +143,7 @@ export class ToolingComponent {
       },
       {
         name: 'Android Studio',
-        experience: '2 Years',
+        level: 4,
         svg: this.sanitizer.bypassSecurityTrustHtml(`<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="25" height="25" viewBox="0,0,256,256">
                 <g fill="#0cc50c" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" 
                 stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal">

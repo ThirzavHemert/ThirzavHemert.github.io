@@ -19,7 +19,17 @@
           </div>
           <div class="back">
             <div style="flex-grow: 3; text-align: center; padding: 15px;">
-              {{ language.experience }}
+              <div class="skill-level">
+                <ng-container *ngFor="let i of [1,2,3,4,5]">
+                  <span
+                    class="circle"
+                    [ngClass]="{
+                      'filled': i <= language.level,
+                      'half': i - 0.5 === language.level
+                    }"
+                  ></span>
+                </ng-container>
+              </div>
             </div>
           </div>
         </div>
@@ -39,7 +49,17 @@
           </div>
           <div class="back">
             <div style="flex-grow: 3; text-align: center; padding: 15px;">
-              {{ tool.experience }}
+              <div class="skill-level">
+                <ng-container *ngFor="let i of [1,2,3,4,5]">
+                  <span
+                    class="circle"
+                    [ngClass]="{
+                      'filled': i <= tool.level,
+                      'half': i - 0.5 === tool.level
+                    }"
+                  ></span>
+                </ng-container>
+              </div>
             </div>
           </div>
         </div>

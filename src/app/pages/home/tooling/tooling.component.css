@@ -120,5 +120,34 @@
         transform: rotateY(180deg);
     }
 
-    
+    .skill-level {
+        display: flex;
+        justify-content: center;
+        gap: 5px;
+    }
+
+    .circle {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        border: 1px solid #ccc;
+        background-color: transparent;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .circle.filled {
+        background-color: #0cc50c;
+        border-color: #0cc50c;
+    }
+
+    .circle.half::before {
+        content: '';
+        position: absolute;
+        width: 50%;
+        height: 100%;
+        background-color: #0cc50c;
+        left: 0;
+        top: 0;
+    }
 }
