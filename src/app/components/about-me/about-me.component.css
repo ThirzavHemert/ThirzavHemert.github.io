@@ -120,8 +120,21 @@
 
 
   @media screen and (max-width: 700px) {  
+    .content-wrapper {
+      display: block;
+    }
+
+    .hero {
+      margin: 20px;
+      height: 200px;
+    }
+
+    .links {
+      max-height: 20%;
+    }
+
     .description {
-      background: blue;
+      padding: 20px;
     }
   }
 }
