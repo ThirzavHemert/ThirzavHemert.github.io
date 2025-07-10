@@ -1,6 +1,7 @@
 import { AfterViewInit, Component, ElementRef, HostListener, OnInit, QueryList, ViewChild, ViewChildren } from '@angular/core';
 import { Project } from '../../../models/project.model';
 import { ProjectService } from 'src/app/project.service';
+import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 
 @Component({
   selector: 'app-time-line',
@@ -14,7 +15,7 @@ export class TimeLineComponent implements OnInit {
   projects: Project[] = [];
   groupedProjects: { [year: number]: Project[] } = {};
 
-  constructor(private projectService: ProjectService) {}
+  constructor(private projectService: ProjectService, private breakpointObserver: BreakpointObserver) {}
 
   ngOnInit() {
     this.projectService.getData().subscribe(
@@ -25,6 +26,12 @@ export class TimeLineComponent implements OnInit {
       error => console.error("Error fetching data: ", error)
     );
     this.checkScreenSize();
+
+    this.breakpointObserver
+      .observe([Breakpoints.Handset])
+      .subscribe(result => {
+        this.isMobileView = result.matches;
+      });
   }
 
   @HostListener('window:resize', ['$event'])
@@ -33,7 +40,7 @@ export class TimeLineComponent implements OnInit {
   }
 
   checkScreenSize() {
-    this.isMobileView = window.innerWidth <= 550; // mobile breakpoint
+    this.isMobileView = window.innerWidth <= 550;
   }
 
   getYears(): number[] {
