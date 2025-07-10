@@ -58,12 +58,6 @@
         cursor: pointer;
     }
 
-    li:hover {
-        background-color: #3d3d43;
-    }
-
-    
-
     @media screen and (max-width: 1600px) {  
 
     }
@@ -112,5 +106,9 @@
         li {
             font-size: 1em;
         }
+    }
+
+    li:hover {
+        background-color: #3d3d43;
     }
 }
