@@ -223,6 +223,12 @@
     .year0, .year1, .year2{
       font-size: 3.25rem;
     }
+
+    .timeline-content {
+      width: 80%;
+      padding-left: 5%;
+      padding-right: 5%;
+    }
   }
 
   
@@ -250,11 +256,21 @@
     .year0, .year1, .year2{
       font-size: 2.75rem;
     }
+
+    .timeline-content {
+      width: 90%;
+      padding-left: 0;
+      padding-right: 0;
+    }
   }
 
   @media screen and (max-width: 850px) {  
     .year0, .year1, .year2{
-      font-size: 2.25rem;
+      font-size: 2.5rem;
+    }
+
+    .timeline-content {
+      width: 95%;
     }
   }
   
@@ -282,6 +298,10 @@
 
     .year0, .year1, .year2{
       font-size: 1.75rem;
+    }
+
+    .timeline-content {
+      width: 100%;
     }
   }
 

@@ -104,21 +104,73 @@
 
 @media screen and (max-width: 1300px) {  
   .descr {
-    font-size: 0.9em;
+    font-size: 1.1em;
     -webkit-line-clamp: 8;
   }
 }
 
 @media screen and (max-width: 1000px) {  
   .descr {
-    font-size: 0.7em;
+    font-size: 1em;
+    -webkit-line-clamp: 7;
+  }
+}
+
+@media screen and (max-width: 850px) { 
+  .con {
+    width: 70%;
+    height: 80%;
+  }
+
+  .con0{
+    width: 70%;
+    height: 80%;
+  }
+
+  .descr {
+    font-size: 1em;
     -webkit-line-clamp: 7;
   }
 }
 
 @media (max-width: 700px) {
+  .title {
+    font-size: 1.2em
+  }
+
+  .descr {
+    font-size: 0.9em;
+    -webkit-line-clamp: 5;
+  }
+
+  .con {
+    width: 70%;
+    height: 80%;
+  }
+
+  .con0{
+    width: 70%;
+    height: 80%;
+  }
+}
+
+@media (max-width: 600px) {
+  .title {
+    font-size: 1em
+  }
+
   .descr {
     font-size: 0.7em;
     -webkit-line-clamp: 5;
+  }
+
+  .con {
+    width: 70%;
+    height: 80%;
+  }
+
+  .con0{
+    width: 70%;
+    height: 80%;
   }
 }
