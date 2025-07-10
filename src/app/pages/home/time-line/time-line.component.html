@@ -12,6 +12,17 @@
     <div class="sub-header">Timeline</div>
   </div>
 
+  <div class="mobile-timeline" *ngIf="isMobileView">
+  <div *ngFor="let year of getYears()" class="mobile-year-block">
+    <h2 class="mobile-year-header">{{ year }}</h2>
+    <div *ngFor="let project of groupedProjects[year]; let i = index">
+      <div >
+        <app-timeline-project [project]="project" [index]="i" [isMobileView]="true"></app-timeline-project>
+      </div>
+    </div>
+  </div>
+</div>
+
 
     <div class="timeline">
       <aside class="side-nav">
