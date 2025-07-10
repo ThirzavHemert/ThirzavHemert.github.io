@@ -5,7 +5,7 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'app-timeline-project',
   templateUrl: './timeline-project.component.html',
-  styleUrls: ['./timeline-project.component.css']
+  styleUrls: ['./timeline-project.component.scss']
 })
 export class TimelineProjectComponent {
 

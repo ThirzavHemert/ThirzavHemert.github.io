@@ -4,7 +4,7 @@ import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
 @Component({
   selector: 'app-tooling',
   templateUrl: './tooling.component.html',
-  styleUrls: ['./tooling.component.css']
+  styleUrls: ['./tooling.component.scss']
 })
 export class ToolingComponent {
   languages: { name: string; level: number; svg: SafeHtml }[];
