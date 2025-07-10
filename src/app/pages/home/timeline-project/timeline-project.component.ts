@@ -9,6 +9,7 @@ import { Router } from '@angular/router';
 })
 export class TimelineProjectComponent {
 
+  @Input() isMobileView: boolean = false;
   @Input() project!: Project;
   @Input() index!: number;
 

@@ -87,6 +87,7 @@
   @media (max-width: 700px) {
     .project-grid {
       width: 90%;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     }
   }
 }

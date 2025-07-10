@@ -19,6 +19,8 @@ import { ProjectListItemComponent } from './pages/project-list/project-list-item
 import {MatCardModule} from '@angular/material/card';
 import { AboutMePageComponent } from './pages/about-me-page/about-me-page.component';
 import { AboutMeHomeComponent } from './pages/home/about-me-home/about-me-home.component';
+import { DesktopTimelineComponent } from './pages/home/time-line/desktop-timeline/desktop-timeline.component';
+import { MobileTimelineComponent } from './pages/home/time-line/mobile-timeline/mobile-timeline.component';
 
 const routerOptions: ExtraOptions = {
   anchorScrolling: 'enabled', // Enable scrolling to fragments
@@ -48,7 +50,9 @@ const routes: Routes = [
     ProjectListComponent,
     ProjectListItemComponent,
     AboutMePageComponent,
-    AboutMeHomeComponent
+    AboutMeHomeComponent,
+    DesktopTimelineComponent,
+    MobileTimelineComponent
   ],
   imports: [
     BrowserModule,
