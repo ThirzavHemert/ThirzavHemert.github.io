@@ -25,23 +25,23 @@ export class TimeLineComponent implements OnInit {
       },
       error => console.error("Error fetching data: ", error)
     );
-    this.checkScreenSize();
+    // this.checkScreenSize();
 
     this.breakpointObserver
-      .observe([Breakpoints.Handset])
+      .observe([Breakpoints.Small])
       .subscribe(result => {
         this.isMobileView = result.matches;
       });
   }
 
-  @HostListener('window:resize', ['$event'])
-  onResize(event: any) {
-    this.checkScreenSize();
-  }
+  // @HostListener('window:resize', ['$event'])
+  // onResize(event: any) {
+  //   this.checkScreenSize();
+  // }
 
-  checkScreenSize() {
-    this.isMobileView = window.innerWidth <= 550;
-  }
+  // checkScreenSize() {
+  //   this.isMobileView = window.innerWidth <= 550;
+  // }
 
   getYears(): number[] {
     return Object.keys(this.groupedProjects).map(year => +year);

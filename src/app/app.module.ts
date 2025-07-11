@@ -10,7 +10,6 @@ import { ToolingComponent } from './pages/home/tooling/tooling.component';
 import { AboutMeComponent } from './components/about-me/about-me.component';
 import { ExtraOptions, RouterModule, Routes } from '@angular/router';
 import { TimeLineComponent } from './pages/home/time-line/time-line.component';
-import { TimelineProjectComponent } from './pages/home/timeline-project/timeline-project.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { ProjectDetailComponent } from './pages/project-detail/project-detail.component';
 import { ProjectListComponent } from './pages/project-list/project-list.component';
@@ -21,6 +20,8 @@ import { AboutMePageComponent } from './pages/about-me-page/about-me-page.compon
 import { AboutMeHomeComponent } from './pages/home/about-me-home/about-me-home.component';
 import { DesktopTimelineComponent } from './pages/home/time-line/desktop-timeline/desktop-timeline.component';
 import { MobileTimelineComponent } from './pages/home/time-line/mobile-timeline/mobile-timeline.component';
+import { DesktopTlProjectComponent } from './pages/home/time-line/desktop-timeline/desktop-tl-project/desktop-tl-project.component';
+import { MobileTlProjectComponent } from './pages/home/time-line/mobile-timeline/mobile-tl-project/mobile-tl-project.component';
 
 const routerOptions: ExtraOptions = {
   anchorScrolling: 'enabled', // Enable scrolling to fragments
@@ -44,7 +45,6 @@ const routes: Routes = [
     ToolingComponent,
     AboutMeComponent,
     TimeLineComponent,
-    TimelineProjectComponent,
     FooterComponent,
     ProjectDetailComponent,
     ProjectListComponent,
@@ -52,7 +52,9 @@ const routes: Routes = [
     AboutMePageComponent,
     AboutMeHomeComponent,
     DesktopTimelineComponent,
-    MobileTimelineComponent
+    MobileTimelineComponent,
+    DesktopTlProjectComponent,
+    MobileTlProjectComponent
   ],
   imports: [
     BrowserModule,

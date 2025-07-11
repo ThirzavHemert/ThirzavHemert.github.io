@@ -12,6 +12,7 @@
     <div class="sub-header">Timeline</div>
   </div>
 
+  <!-- <app-mobile-timeline [groupedProjects]="groupedProjects"></app-mobile-timeline> -->
   <app-mobile-timeline *ngIf="isMobileView" [groupedProjects]="groupedProjects"></app-mobile-timeline>
   <app-desktop-timeline *ngIf="!isMobileView" [groupedProjects]="groupedProjects"></app-desktop-timeline>
 

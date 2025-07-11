@@ -1,13 +1,13 @@
 import { Component, Input } from '@angular/core';
-import { Project } from 'src/app/models/project.model';
 import { Router } from '@angular/router';
+import { Project } from 'src/app/models/project.model';
 
 @Component({
-  selector: 'app-timeline-project',
-  templateUrl: './timeline-project.component.html',
-  styleUrls: ['./timeline-project.component.scss']
+  selector: 'app-desktop-tl-project',
+  templateUrl: './desktop-tl-project.component.html',
+  styleUrls: ['./desktop-tl-project.component.scss']
 })
-export class TimelineProjectComponent {
+export class DesktopTlProjectComponent {
 
   @Input() isMobileView: boolean = false;
   @Input() project!: Project;

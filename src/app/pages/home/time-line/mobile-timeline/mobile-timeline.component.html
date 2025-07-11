@@ -2,7 +2,7 @@
   <div *ngFor="let year of getYears()" class="mobile-year-block">
     <h2 class="mobile-year-header">{{ year }}</h2>
     <div *ngFor="let project of groupedProjects[year]; let i = index">
-      <app-timeline-project [project]="project" [index]="i"></app-timeline-project>
+      <!-- <app-timeline-project [project]="project" [index]="i"></app-timeline-project> -->
     </div>
   </div>
 </div>
