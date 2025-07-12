@@ -1,5 +1,26 @@
+.expand-btn {
+  margin: auto;
+  left: 50%;
+  text-align: center;
+  display: block;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.expand-btn:hover {
+  background: rgba(0, 0, 0, 0.9);
+}
+
+.btn-div {
+  background: #01234a;
+}
+
 .timeline-desktop {
-  display: flex;         // 🔧 Key to layout columns
+  display: flex;
   flex-direction: row;
   align-items: flex-start;
   width: 100%;
@@ -7,38 +28,17 @@
 
   .timeline-container{
     position: relative;
-    max-height: 1200px;
+    max-height: 1500px;
     transition: max-height 0.5s ease-in-out;
     overflow: hidden;
     flex-grow: 4;
 
 
-  &.expanded {
-    max-height: 100%;
-    mask-image: none;
-    -webkit-mask-image: none;
-  }
-}
-
-  .expand-btn {
-    margin: auto;
-    left: 50%;
-    text-align: center;
-    display: block;
-    background: rgba(0, 0, 0, 0.7);
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-    transition: background 0.3s;
-  }
-
-  .expand-btn:hover {
-    background: rgba(0, 0, 0, 0.9);
-  }
-
-  .btn-div {
-    background: #01234a;
+    &.expanded {
+      max-height: 100%;
+      mask-image: none;
+      -webkit-mask-image: none;
+    }
   }
 
   .content {
