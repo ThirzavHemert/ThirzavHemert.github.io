@@ -28,7 +28,7 @@ export class TimeLineComponent implements OnInit {
     // this.checkScreenSize();
 
     this.breakpointObserver
-      .observe([Breakpoints.Small])
+      .observe(['(max-width: 960px)'])
       .subscribe(result => {
         this.isMobileView = result.matches;
       });

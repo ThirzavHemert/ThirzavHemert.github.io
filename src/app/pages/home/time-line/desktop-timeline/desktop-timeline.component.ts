@@ -10,7 +10,6 @@ import { ProjectService } from 'src/app/project.service';
 })
 export class DesktopTimelineComponent {
     isExpanded = false;
-    isMobileView = false;
   
     projects: Project[] = [];
     @Input() groupedProjects: { [year: string]: any[] } = {};
@@ -18,17 +17,17 @@ export class DesktopTimelineComponent {
     constructor(private projectService: ProjectService) {}
   
     ngOnInit() {
-      this.checkScreenSize();
+      // this.checkScreenSize();
     }
   
     @HostListener('window:resize', ['$event'])
     onResize(event: any) {
-      this.checkScreenSize();
+      // this.checkScreenSize();
     }
   
-    checkScreenSize() {
-      this.isMobileView = window.innerWidth <= 550; // mobile breakpoint
-    }
+    // checkScreenSize() {
+    //   this.isMobileView = window.innerWidth <= 550; // mobile breakpoint
+    // }
   
     getYears(): string[] {
     return Object.keys(this.groupedProjects).sort((a, b) => +b - +a);
