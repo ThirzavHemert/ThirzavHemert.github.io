@@ -1,1 +1,12 @@
-<p>mobile-tl-project works!</p>
+<div [class.clickable]="project.id !== -1" (click)="project.id !== -1 ? goToProject(project) : null" class="project-block-mobile">
+  <div class="project-content">
+    <p class="title"> {{ project.title }}</p>
+    <br>
+    <p class="descr" [innerHTML]="formatDescr"></p>
+
+  </div>
+  
+  <div class="project-img-div">
+    <img [src]="project.image_thumbnail" class="image-project" alt="{{ project.title }} image">
+  </div>
+</div>

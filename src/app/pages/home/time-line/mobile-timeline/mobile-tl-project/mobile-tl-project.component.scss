@@ -1,0 +1,66 @@
+.project-block-mobile {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  height: 70%;
+  background: #011c3b;
+  color: white;
+  border-radius: 25px;
+  box-shadow: inset 0 0 10px rgb(10, 10, 10);
+  overflow: hidden;
+  margin: auto;
+  cursor: pointer;
+
+  .project-content {
+    flex: 0 0 70%;
+    padding: 1.5rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .project-img-div {
+    flex: 0 0 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+  }
+
+  .image-project {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 15px;
+  }
+
+  .title {
+    color: #ebebeb;
+    font-size: 2em;
+    font-weight: bold;
+  }
+
+  .descr {
+    color: #dbd9d9;
+    font-size: 1.3em;
+    display: -webkit-box;
+    -webkit-line-clamp: 10;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  @media screen and (max-width: 700px) {
+    .title {
+      font-size: 1.8em
+    }
+
+    .descr {
+      font-size: 1.1em;
+      -webkit-line-clamp: 9;
+    }
+
+  }
+
+}

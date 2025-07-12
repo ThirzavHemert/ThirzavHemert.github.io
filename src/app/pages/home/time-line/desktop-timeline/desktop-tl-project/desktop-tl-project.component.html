@@ -1,8 +1,8 @@
-<div (click)="goToProject(project)" class="project-block-desktop">
+<div [class.clickable]="project.id !== -1" (click)="project.id !== -1 ? goToProject(project) : null"  class="project-block-desktop">
   <div class="project-content">
     <p class="title"> {{ project.title }}</p>
     <br>
-    <p class="descr"> {{ project.short_desc }} </p>
+    <p class="descr" [innerHTML]="formatDescr"></p>
 
   </div>
   

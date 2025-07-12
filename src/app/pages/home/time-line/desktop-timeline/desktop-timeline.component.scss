@@ -139,6 +139,11 @@
     display: flex;
   }
 
+  .placeholder {
+    pointer-events: none;
+    cursor: default;
+  }
+
   .year0 {
     position: absolute;
     top: 68%;

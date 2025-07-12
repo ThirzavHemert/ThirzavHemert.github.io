@@ -12,8 +12,13 @@ export class DesktopTlProjectComponent {
   @Input() isMobileView: boolean = false;
   @Input() project!: Project;
   @Input() index!: number;
+  formatDescr!: string;
 
   constructor(private router : Router){}
+
+  ngOnInit() {
+    this.formatDescr = this.project.short_desc.replace(/\n/g, '<br>');
+  }
 
   goToProject(project: Project){
     this.router.navigate(['/projects', project.id], {state: {project}})

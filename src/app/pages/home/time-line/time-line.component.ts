@@ -34,15 +34,6 @@ export class TimeLineComponent implements OnInit {
       });
   }
 
-  // @HostListener('window:resize', ['$event'])
-  // onResize(event: any) {
-  //   this.checkScreenSize();
-  // }
-
-  // checkScreenSize() {
-  //   this.isMobileView = window.innerWidth <= 550;
-  // }
-
   getYears(): number[] {
     return Object.keys(this.groupedProjects).map(year => +year);
   }
@@ -65,9 +56,9 @@ export class TimeLineComponent implements OnInit {
       if (projectMap[year].length % 2 === 0) {
         projectMap[year].push({
           id: -1,
-          title: "Placeholder",
+          title: "Milestones",
           year: parseInt(year),
-          short_desc: "",
+          short_desc: "- Jetpack Compose \n - Kotlin \n - Research Skills \n - Business Intelligence \n - Gamemaker Studio",
           description: "",
           key_features: [],
           technical_desc: "",
@@ -76,7 +67,7 @@ export class TimeLineComponent implements OnInit {
           tools: [],
           client: "",
           image_head: "",
-          image_thumbnail: "",
+          image_thumbnail: "assets/img/projects/milestone.jpg",
           images: [],
         });
       }
