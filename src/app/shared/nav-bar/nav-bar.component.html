@@ -1,12 +1,20 @@
 <div class="navbar-component">
 	<nav>
 		<div class="container">
+			<div class="logo">
+				<div class="logo-circle">
+					<img src="assets/img/brand_logo.svg" class="logo_svg" alt="">
+				</div>
+			</div>
 			<ul>
 				<li class="nav-item nav-bordera" [routerLink]="'/'" [routerLinkActive]="['link-active']" [routerLinkActiveOptions]="{ exact: true }">
 					<a class="nav-link" >Home</a>
 				</li>
 				<li class="nav-item" [routerLink]="['/allProjects']" [routerLinkActive]="['link-active']" [routerLinkActiveOptions]="{ exact: true }">
 					<a class="nav-link" >Projects</a>
+				</li>
+				<li class="empty-div">
+					<p class="empty-p"> No </p>
 				</li>
 				<li class="nav-item" [routerLink]="['/aboutMe']" [routerLinkActive]="['link-active']" [routerLinkActiveOptions]="{ exact: true }">
 					<a class="nav-link" >About me</a>

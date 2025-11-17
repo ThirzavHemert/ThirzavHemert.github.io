@@ -11,7 +11,7 @@ export class ToolingComponent {
   tooling: { name: string; level: number; svg: SafeHtml }[];
 
   constructor(private sanitizer: DomSanitizer) {
-  
+   
     this.languages = [
       {
         name: 'C#',
@@ -127,7 +127,17 @@ export class ToolingComponent {
       {
         name: 'SQL',
         level: 4.5,
-        svg: this.sanitizer.bypassSecurityTrustHtml(``)
+        svg: this.sanitizer.bypassSecurityTrustHtml(`<svg id="Laag_1" xmlns="http://www.w3.org/2000/svg" version="1.1" width="25" height="25" viewBox="0 0 165.6 161.6">
+          <defs>
+            <style>.st0 {fill: none;stroke: #0cc50c;stroke-miterlimit: 10;stroke-width: 15px;}</style>
+          </defs>
+          <ellipse class="st0" cx="85.2" cy="33.2" rx="56.1" ry="21.6"/>
+          <path class="st0" d="M141.4,66.1c0,11.9-25.1,21.6-56.1,21.6s-56.1-9.7-56.1-21.6"/>
+          <path class="st0" d="M141.4,98.5c0,11.9-25.1,21.6-56.1,21.6s-56.1-9.7-56.1-21.6"/>
+          <path class="st0" d="M141.4,128.7c0,11.9-25.1,21.6-56.1,21.6s-56.1-9.7-56.1-21.6"/>
+          <line class="st0" x1="29.1" y1="129.3" x2="29.1" y2="33.7"/>
+          <line class="st0" x1="141.4" y1="129.1" x2="141.4" y2="33.7"/>
+        </svg>`)
       },
       {
         name: 'MongoDB',
